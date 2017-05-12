@@ -1,3 +1,13 @@
+import numpy as np
+
+def create_board():
+    x = np.zeros((3,3))
+    return x
+
+
+board = create_board()
+
+
 def possibilities(board):
     y = np.where(board == 0 ) #it gives the indices wherever there are zeros in the form of 2 seperate arrays in a tuple. (array([0, 0, 1, 1, 1, 2, 2, 2]), array([1, 2, 0, 1, 2, 0, 1, 2]))  
     y= np.array(y) # convert it into array.

@@ -18,13 +18,13 @@
 
 ## Projects
 
-* Tic-Tac-Toe
-* Caesar-cipher
-* Translations of Hamlet
-* Classification
-* Whisky Classification
-* Bird Migration
-* Social Network Analysis
+* **Tic-Tac-Toe**
+* **Caesar-cipher**
+* **Translations of Hamlet**
+* **Classification**
+* **Whisky Classification**
+* **Bird Migration**
+* **Social Network Analysis**
 
 ----------------------------------
 

@@ -10,10 +10,6 @@
  
 
 
-
-![](https://www.python.org/static/opengraph-icon-200x200.png)
-
-
 #### This contains a curated list of some of the awesome small projects made in Python that you can code away this summer.
 #### It includes analysis of different Python modules, a deep analysis of the Python statistics modules and dataframes like Pandas.
 #### It has some projects on classification, correlation and regression which are the fundmental building blocks of Machine Learning and Neural Networks.

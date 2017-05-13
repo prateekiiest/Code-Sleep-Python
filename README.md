@@ -2,7 +2,7 @@
 
 ## Python repository for projects in Python
  
-! In Progress
+
 
 
 ![](https://www.python.org/static/opengraph-icon-200x200.png)
@@ -27,6 +27,11 @@ Tic-tac-toe (or noughts and crosses) is a simple strategy game in which two play
 
 ![](https://upload.wikimedia.org/wikipedia/commons/8/8e/TicTacToe-6549127nnXOp.gif)
 
+Players soon discover that best play from both parties leads to a draw. 
+
+Because of the simplicity of tic-tac-toe, it is often used as a pedagogical tool for teaching the concepts of good sportsmanship and the branch of artificial intelligence that deals with the searching of game trees. It is straightforward to write a computer program to play tic-tac-toe perfectly, to enumerate the 765 essentially different positions (the state space complexity), or the 26,830 possible games up to rotations and reflections (the game tree complexity) on this space.
+
+#### CODE AND JUPYTER NOTEBOOK
 
 -----------------------------------
 
@@ -36,6 +41,10 @@ A cipher is a secret code for a language. In this study, we will explore a ciphe
 
 ![](http://thelivingpearl.com/files/2013/06/wpid-Ciphrdsk-2013-06-3-12-17.gif)
 
+The Caesar cipher, also known as a shift cipher, is one of the simplest forms of encryption. It is a substitution cipher where each letter in the original message (called the plaintext) is replaced with a letter corresponding to a certain number of letters up or down in the alphabet.
+
+In this way, a message that initially was quite readable, ends up in a form that can not be understood at a simple glance.
+
 ------------------------------------------------
 
 ### Translations of Hamlet
@@ -43,6 +52,8 @@ A cipher is a secret code for a language. In this study, we will explore a ciphe
 In this case study, we will find and plot the distribution of word frequencies for each translation of Hamlet. Perhaps the distribution of word frequencies of Hamlet depends on the translation.
 
 ![](http://www.aboutlanguageschools.com/images/language-translations.jpg)
+
+
 
 -----------------------------------------------------
 

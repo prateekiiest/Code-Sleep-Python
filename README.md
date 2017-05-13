@@ -39,7 +39,7 @@ Players soon discover that best play from both parties leads to a draw.
 
 Because of the simplicity of tic-tac-toe, it is often used as a pedagogical tool for teaching the concepts of good sportsmanship and the branch of artificial intelligence that deals with the searching of game trees. It is straightforward to write a computer program to play tic-tac-toe perfectly, to enumerate the 765 essentially different positions (the state space complexity), or the 26,830 possible games up to rotations and reflections (the game tree complexity) on this space.
 
-#### CODE AND JUPYTER NOTEBOOK
+#### [CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/tic-tac-toe.py)
 
 -----------------------------------
 
@@ -53,6 +53,8 @@ The Caesar cipher, also known as a shift cipher, is one of the simplest forms of
 
 In this way, a message that initially was quite readable, ends up in a form that can not be understood at a simple glance.
 
+### [CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Caesar-cipher.py)
+
 ------------------------------------------------
 
 ### Translations of Hamlet
@@ -61,7 +63,7 @@ In this case study, we will find and plot the distribution of word frequencies f
 
 ![](http://www.aboutlanguageschools.com/images/language-translations.jpg)
 
-
+### [CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/translation_hamlet.py)
 
 -----------------------------------------------------
 
@@ -73,12 +75,16 @@ In this case study, we will analyze a dataset consisting of an assortment of win
 
 ![](http://homepages.inf.ed.ac.uk/rbf/HIPR2/classb.gif)
 
+### [CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Classification.py)
+
 ----------------------------------------------
 
 
 ### Whisky Classification
 
 In this case study, we have prepared step-by-step instructions for you on how to prepare plots in Bokeh, a library designed for simple and interactive plotting. We will demonstrate Bokeh by continuing the analysis of Scotch whiskies.
+
+### [CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/whisky_classification.py)
 
 ---------------------------------------------------
 
@@ -88,6 +94,9 @@ In this case study, we have prepared step-by-step instructions for you on how to
 In this case study, we will continue taking a look at patterns of flight for each of the three birds in our dataset.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/BrantaLeucopsisMigration.jpg/300px-BrantaLeucopsisMigration.jpg)
+
+### [CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Bird_migration.py)
+
 -------------------------------------------------
 
 
@@ -95,5 +104,7 @@ In this case study, we will continue taking a look at patterns of flight for eac
 Homophily is a network characteristic. Homophily occurs when nodes that share an edge share a characteristic more often than nodes that do not share an edge. In this case study, we will investigate homophily of several characteristics of individuals connected in social networks in rural India.
 
 ![](https://images.pond5.com/social-media-animation-after-effect-046838541_iconm.jpeg)
+
+### [CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/social_network.py)
 
 ----------------------------------------------------

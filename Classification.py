@@ -19,7 +19,7 @@ principal_components = pca.fit(numeric_data).transform(numeric_data)
 
 
 
-############
+
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 from matplotlib.backends.backend_pdf import PdfPages
@@ -36,7 +36,7 @@ plt.show()
 
 
 
-#################
+
 
 def accuracy(predictions, outcomes):
     # Enter your code here!
@@ -52,7 +52,7 @@ y = np.array([1,2,4])
 
 print (accuracy(x,y))
 
-###############
+
 print(accuracy(0,data["high_quality"]))
 
 
@@ -72,7 +72,7 @@ n_rows = data.shape[0]
 random.seed(123)
 selection = random.sample(range(n_rows), 10)
 
-###############
+
 predictors = np.array(numeric_data)
 training_indices = [i for i in range(len(predictors)) if i not in selection]
 outcomes = np.array(data["high_quality"])

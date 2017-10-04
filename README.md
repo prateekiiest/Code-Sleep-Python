@@ -113,3 +113,7 @@ Homophily is a network characteristic. Homophily occurs when nodes that share an
 New to Python? No problem! Take a look at the following resources:
 
 - [Python beginners guide](https://wiki.python.org/moin/BeginnersGuide)
+- [Python course by Google](https://developers.google.com/edu/python/) (online course)
+- [Learn Python the hard way](https://learnpythonthehardway.org/book/) (book)
+- [MIT: introduction to Computer Science and programming in Python](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/) (open courseware)
+

@@ -108,3 +108,5 @@ New to Python? No problem! Take a look at the following resources:
 - [Python course by Google](https://developers.google.com/edu/python/) (online course)
 - [Learn Python the hard way](https://learnpythonthehardway.org/book/) (book)
 - [MIT: introduction to Computer Science and programming in Python](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/) (open courseware)
+- [Python for Developers](http://ricardoduarte.github.io/python-for-developers/)(book)
+- [How to Think Like a Computer Scientist](http://openbookproject.net/thinkcs/python/english3e/)(book)

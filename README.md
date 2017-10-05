@@ -1,45 +1,42 @@
-# Python-Scripts
-
-
+# Code Sleep Python
 
 ![](https://images7.alphacoders.com/679/679140.png)
 
+## About
 
+This repository contains a curated list of some of the awesome small projects made in Python that you can code away this summer.
 
-## Python repository for projects in Python
- 
+It includes analysis of different Python modules, a deep analysis of the Python statistics modules and dataframes like Pandas.
 
+It has some projects on classification, correlation and regression which are the fundamental building blocks of Machine Learning and Neural Networks.
 
-#### This contains a curated list of some of the awesome small projects made in Python that you can code away this summer.
-#### It includes analysis of different Python modules, a deep analysis of the Python statistics modules and dataframes like Pandas.
-#### It has some projects on classification, correlation and regression which are the fundmental building blocks of Machine Learning and Neural Networks.
+The repository is still under development. Only the source code has been uploaded so far. Implementations and results using Jupyter Notebooks will be implemented shortly.
 
-##### The repository is still under development. Only the source code has been uploaded so far. Implementations and results using Jupyter Notebooks will be implemented shortly.
+New to Python? Take a look [here](https://github.com/prateekiiest/Code-Sleep-Python#getting-started-with-python).
 
 ## Projects
 
-* **Tic-Tac-Toe**
-* **Caesar-cipher**
-* **Translations of Hamlet**
-* **Classification**
-* **Whisky Classification**
-* **Bird Migration**
-* **Social Network Analysis**
+* [Tic-Tac-Toe](https://github.com/prateekiiest/Code-Sleep-Python#tic-tac-toe)
+* [Caesar-Cipher](https://github.com/prateekiiest/Code-Sleep-Python#caesar-cipher)
+* [Translations of Hamlet](https://github.com/prateekiiest/Code-Sleep-Python#translations-of-hamlet)
+* [Classification](https://github.com/prateekiiest/Code-Sleep-Python#classification)
+* [Whisky Classification](https://github.com/prateekiiest/Code-Sleep-Python#whisky-classification)
+* [Bird Migration](https://github.com/prateekiiest/Code-Sleep-Python#whisky-classification)
+* [Social Network Analysis](https://github.com/prateekiiest/Code-Sleep-Python#whisky-classification)
 
 ----------------------------------
 
-
 ### Tic-Tac-Toe
 
-Tic-tac-toe (or noughts and crosses) is a simple strategy game in which two players take turns placing a mark on a 3x3 board, attempting to make a row, column, or diagonal of three with their mark. In this homework, we will use the tools we've covered in the past two weeks to create a tic-tac-toe simulator and evaluate basic winning strategies.
+Tic-Tac-Toe (or noughts and crosses) is a simple strategy game in which two players take turns placing a mark on a 3x3 board, attempting to make a row, column, or diagonal of three with their mark. In this homework, we will use the tools we've covered in the past two weeks to create a Tic-Tac-Toe simulator and evaluate basic winning strategies.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/8/8e/TicTacToe-6549127nnXOp.gif)
 
-Players soon discover that best play from both parties leads to a draw. 
+Players soon discover that best play from both parties leads to a draw.
 
-Because of the simplicity of tic-tac-toe, it is often used as a pedagogical tool for teaching the concepts of good sportsmanship and the branch of artificial intelligence that deals with the searching of game trees. It is straightforward to write a computer program to play tic-tac-toe perfectly, to enumerate the 765 essentially different positions (the state space complexity), or the 26,830 possible games up to rotations and reflections (the game tree complexity) on this space.
+Because of the simplicity of Tic-Tac-Toe, it is often used as a pedagogical tool for teaching the concepts of good sportsmanship and the branch of artificial intelligence that deals with the searching of game trees. It is straightforward to write a computer program to play Tic-Tac-Toe perfectly, to enumerate the 765 essentially different positions (the state space complexity), or the 26.830 possible games up to rotations and reflections (the game tree complexity) on this space.
 
-#### [CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/tic-tac-toe.py)
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/tic-tac-toe.py)**
 
 -----------------------------------
 
@@ -47,13 +44,11 @@ Because of the simplicity of tic-tac-toe, it is often used as a pedagogical tool
 
 A cipher is a secret code for a language. In this study, we will explore a cipher that is reported by contemporary Greek historians to have been used by Julius Caesar to send secret messages to generals during times of war.
 
-![](http://thelivingpearl.com/files/2013/06/wpid-Ciphrdsk-2013-06-3-12-17.gif)
-
 The Caesar cipher, also known as a shift cipher, is one of the simplest forms of encryption. It is a substitution cipher where each letter in the original message (called the plaintext) is replaced with a letter corresponding to a certain number of letters up or down in the alphabet.
 
 In this way, a message that initially was quite readable, ends up in a form that can not be understood at a simple glance.
 
-### [CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Caesar-cipher.py)
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Caesar-cipher.py)**
 
 ------------------------------------------------
 
@@ -63,11 +58,9 @@ In this case study, we will find and plot the distribution of word frequencies f
 
 ![](http://www.aboutlanguageschools.com/images/language-translations.jpg)
 
-### [CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/translation_hamlet.py)
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/translation_hamlet.py)**
 
 -----------------------------------------------------
-
-
 
 ### Classification
 
@@ -75,19 +68,17 @@ In this case study, we will analyze a dataset consisting of an assortment of win
 
 ![](http://homepages.inf.ed.ac.uk/rbf/HIPR2/classb.gif)
 
-### [CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Classification.py)
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Classification.py)**
 
 ----------------------------------------------
-
 
 ### Whisky Classification
 
 In this case study, we have prepared step-by-step instructions for you on how to prepare plots in Bokeh, a library designed for simple and interactive plotting. We will demonstrate Bokeh by continuing the analysis of Scotch whiskies.
 
-### [CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/whisky_classification.py)
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/whisky_classification.py)**
 
----------------------------------------------------
-
+---------------------------------------------
 
 ### Bird Migration
 
@@ -95,25 +86,25 @@ In this case study, we will continue taking a look at patterns of flight for eac
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/BrantaLeucopsisMigration.jpg/300px-BrantaLeucopsisMigration.jpg)
 
-### [CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Bird_migration.py)
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Bird_migration.py)**
 
 -------------------------------------------------
 
+### Social Network Analysis
 
-### Social Network Analysis 
 Homophily is a network characteristic. Homophily occurs when nodes that share an edge share a characteristic more often than nodes that do not share an edge. In this case study, we will investigate homophily of several characteristics of individuals connected in social networks in rural India.
 
 ![](https://images.pond5.com/social-media-animation-after-effect-046838541_iconm.jpeg)
 
-### [CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/social_network.py)
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/social_network.py)**
 
 ----------------------------------------------------
 
 ## Getting started with Python
+
 New to Python? No problem! Take a look at the following resources:
 
 - [Python beginners guide](https://wiki.python.org/moin/BeginnersGuide)
 - [Python course by Google](https://developers.google.com/edu/python/) (online course)
 - [Learn Python the hard way](https://learnpythonthehardway.org/book/) (book)
 - [MIT: introduction to Computer Science and programming in Python](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/) (open courseware)
-

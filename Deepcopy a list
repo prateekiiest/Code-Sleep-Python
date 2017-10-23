@@ -1,0 +1,24 @@
+def deepcopy(list1,i=0,list2=[]) :
+    '''
+    Objective : Implementing DeepCopy with using deepcopy method
+    Input Paramtrs : 
+        list1 : list of elements
+        i : for indexing in list1
+        list2 : deepcopy of list1, initially empty
+    Return Values :
+        list2 : deepcopy of list1
+    '''
+    #Approach : Implementing deepcopy using recursion
+    if i==len(list1):
+        return list2
+    elif (type(list1[i]) == list) :
+        list2.append(deepcopy(list1[i],0,[]))
+        return deepcopy(list1,i+1,list2)
+    else :
+        list2.append(list1[i])
+        return deepcopy(list1,i+1,list2)
+
+
+list1 = [1,2,3,[4,5],6,[7,8,9]]
+print(list1)
+print(deepcopy(list1))

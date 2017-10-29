@@ -10,3 +10,4 @@ Thanks for all your contributions :heart: :octocat:
 | [mstuttgart](https://github.com/mstuttgart)   | [README adjusts](https://github.com/prateekiiest/Code-Sleep-Python/pull/3) | Merged |
 | [blossomica](https://github.com/blossomica) |[Fix Broken Code Links](https://github.com/prateekiiest/Code-Sleep-Python/pull/18) | Merged | 
 
+| [jasperdchen](https://github.com/jasperdchen) | [README](https://github.com/prateekiiest/Code-Sleep-Python/pull/31) | Merged |

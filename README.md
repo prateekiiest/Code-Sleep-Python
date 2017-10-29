@@ -23,6 +23,7 @@ New to Python? Take a look [here](https://github.com/prateekiiest/Code-Sleep-Pyt
 * [Whisky Classification](https://github.com/prateekiiest/Code-Sleep-Python#whisky-classification)
 * [Bird Migration](https://github.com/prateekiiest/Code-Sleep-Python#whisky-classification)
 * [Social Network Analysis](https://github.com/prateekiiest/Code-Sleep-Python#whisky-classification)
+* [Encryption-Techniques](#Encryption-Techniques)
 
 ----------------------------------
 
@@ -100,6 +101,13 @@ Homophily is a network characteristic. Homophily occurs when nodes that share an
 
 ----------------------------------------------------
 
+### Encryption-Techniques
+
+Encryption is an interesting piece of technology that works by scrambling data so it is unreadable by unintended parties. The technology comes in many forms, with key size and strength generally being the biggest differences in one variety from the next. This repo has implementations of different encryption techniques. More [here](https://en.wikipedia.org/wiki/Encryption).
+
+**[CODE](Encryption-Techniques/)**
+
+----------------------------------------------------
 ## Getting started with Python
 
 New to Python? No problem! Take a look at the following resources:

@@ -6,4 +6,4 @@ Thanks for all your contributions :heart: :octocat:
 
 | Github username      | Pull Request           | Status  |
 | ------------- |:-------------:| -----:|
-| @mstuttgart   | [README adjusts](https://github.com/prateekiiest/Code-Sleep-Python/pull/3) | Merged |
+| [mstuttgart](https://github.com/mstuttgart)   | [README adjusts](https://github.com/prateekiiest/Code-Sleep-Python/pull/3) | Merged |

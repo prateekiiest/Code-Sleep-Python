@@ -21,16 +21,13 @@ New to Python? Take a look [here](https://github.com/prateekiiest/Code-Sleep-Pyt
 * [Translations of Hamlet](https://github.com/prateekiiest/Code-Sleep-Python#translations-of-hamlet)
 * [Classification](https://github.com/prateekiiest/Code-Sleep-Python#classification)
 * [Whisky Classification](https://github.com/prateekiiest/Code-Sleep-Python#whisky-classification)
-<<<<<<< HEAD
 * [Bird Migration](https://github.com/prateekiiest/Code-Sleep-Python#whisky-classification)
 * [Social Network Analysis](https://github.com/prateekiiest/Code-Sleep-Python#whisky-classification)
-=======
 * [Bird Migration](https://github.com/prateekiiest/Code-Sleep-Python#Bird_mirgation)
 * [Social Network Analysis](https://github.com/prateekiiest/Code-Sleep-Python#social_network)
 * [Prime](https://github.com/prateekiiest/Code-Sleep-Python#Prime)
 * [Website status check](https://github.com/prateekiiest/Code-Sleep-Python#website_status_check)
 * [Encryption-Techniques](#Encryption-Techniques)
->>>>>>> ece519a1ca496abf3b3fa74ba0a60104b6cf9c6a
 
 ----------------------------------
 
@@ -104,8 +101,7 @@ Homophily is a network characteristic. Homophily occurs when nodes that share an
 
 ----------------------------------------------------
 
-<<<<<<< HEAD
-=======
+
 ### Prime number finder
 
 The implementation of Sieve of Eratosthenes is used to find prime numbers.
@@ -134,9 +130,9 @@ Encryption is an interesting piece of technology that works by scrambling data s
 **[CODE](Encrytion-Techniques/)**
 
 ----------------------------------------------------
-=======
 
->>>>>>> ece519a1ca496abf3b3fa74ba0a60104b6cf9c6a
+
+
 ## Getting started with Python
 
 New to Python? No problem! Take a look at the following resources:

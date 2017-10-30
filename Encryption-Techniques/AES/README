@@ -1,0 +1,10 @@
+Instructions:
+	1. The 16-byte hex you want to encrypt is in file 'testBlock'.
+	2. The key for this encryption is in file 'testKey'. Key is 32 byte hex.
+	3. To encrypt run -
+		python main.py encrypt
+		--- Encrypted text gets written in file 'encrypted_file'
+	4. To decrypt run -
+		python main.py decrypt
+		--- Decrypted text gets written in file 'decrypted_file'
+

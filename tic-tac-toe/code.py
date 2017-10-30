@@ -4,9 +4,7 @@ def create_board():
     x = np.zeros((3,3))
     return x
 
-
 board = create_board()
-
 
 def possibilities(board):
     y = np.where(board == 0 ) #it gives the indices wherever there are zeros in the form of 2 seperate arrays in a tuple. (array([0, 0, 1, 1, 1, 2, 2, 2]), array([1, 2, 0, 1, 2, 0, 1, 2]))  
@@ -19,16 +17,11 @@ def random_place(board,player):
     position = random.choice(possibilities(board))
     #print (position)
     return place(board, player, position)
-    
 
 board = random_place(board,2)
 
-
-
 # row_win
 # write your code here!
-
-
 
 def row_win(board,player):
     for i in range(3):
@@ -42,14 +35,10 @@ def row_win(board,player):
             
 row_win(board,1)
         
-
 # ccol_win
 # write your code here!
 
-
 # write your code here!
-
-
 
 def col_win(board,player):
     for i in range(3):
@@ -62,19 +51,11 @@ def col_win(board,player):
             print("False")
             
 col_win(board,1)
-        
-
-
 
 #diag_win
 # write your code here!
-
 # write your code here!
-
-
 # write your code here!
-
-
 
 def diag_win(board,player):
     z = 0
@@ -86,11 +67,7 @@ def diag_win(board,player):
     else:
         print("False")
             
-            
 diag_win(board,1)
-        
-
-
 
 ## Evaluate
 
@@ -109,8 +86,6 @@ def evaluate(board):
 # add your code here.
 evaluate(board)
 
-
-
 ## play_game()
 
 def play_game():
@@ -123,8 +98,6 @@ def play_game():
         
     return z
                      
-
-
 # plot
 import time
 import matplotlib.pyplot as plt
@@ -140,8 +113,6 @@ for i in range(R):
 e = time.time() 
 c = e-s
 print(c)
-
-
 
 x = [r[j] for j in range(R)]
 plt.hist(x)
@@ -163,7 +134,6 @@ def play_strategic_game():
 
 play_strategic_game()  
 
-
 # plotting play-strategic-game
 # write your code here!
 import time
@@ -180,12 +150,3 @@ e = time.time()
 x = [z[j] for j in range(R)]
 plt.hist(x)
 plt.show()
-
-
-
-
-
-
-
-
-

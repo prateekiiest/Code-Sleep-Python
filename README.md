@@ -21,10 +21,14 @@ New to Python? Take a look [here](https://github.com/prateekiiest/Code-Sleep-Pyt
 * [Translations of Hamlet](https://github.com/prateekiiest/Code-Sleep-Python#translations-of-hamlet)
 * [Classification](https://github.com/prateekiiest/Code-Sleep-Python#classification)
 * [Whisky Classification](https://github.com/prateekiiest/Code-Sleep-Python#whisky-classification)
+* [Bird Migration](https://github.com/prateekiiest/Code-Sleep-Python#whisky-classification)
+* [Social Network Analysis](https://github.com/prateekiiest/Code-Sleep-Python#whisky-classification)
 * [Bird Migration](https://github.com/prateekiiest/Code-Sleep-Python#Bird_mirgation)
 * [Social Network Analysis](https://github.com/prateekiiest/Code-Sleep-Python#social_network)
 * [Prime](https://github.com/prateekiiest/Code-Sleep-Python#Prime)
 * [Website status check](https://github.com/prateekiiest/Code-Sleep-Python#website_status_check)
+* [Encryption-Techniques](#Encryption-Techniques)
+
 ----------------------------------
 
 ### Tic-Tac-Toe
@@ -43,7 +47,8 @@ A cipher is a secret code for a language. In this study, we will explore a ciphe
 
 The Caesar cipher, also known as a shift cipher, is one of the simplest forms of encryption. It is a substitution cipher where each letter in the original message (called the plaintext) is replaced with a letter corresponding to a certain number of letters up or down in the alphabet.
 
-In this way, a message that initially was quite readable, ends up in a form that can not be understood at a simple glance.
+
+In this way, a message that initially was quite readable ends up in a form that can not be understood at a simple glance.
 
 **[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Caesar-cipher/code.py)**
 
@@ -97,6 +102,7 @@ Homophily is a network characteristic. Homophily occurs when nodes that share an
 
 ----------------------------------------------------
 
+
 ### Prime number finder
 
 The implementation of Sieve of Eratosthenes is used to find prime numbers.
@@ -109,7 +115,7 @@ The implementation of Sieve of Eratosthenes is used to find prime numbers.
 
 #### Website status check
 
-A simple website crawler to check the return code of a website. It returns with a message on whether the website is online, redirected, or not found. 
+A simple website crawler to check the return code of a website. It returns with a message indicating whether the website is online, redirected, or not found. 
 
 ![](http://yootheme.com/media/docs/assets/images/warp/error_pages_404.jpg)
 
@@ -118,6 +124,15 @@ A simple website crawler to check the return code of a website. It returns with 
 
 ----------------------------------------------------
 
+### Encryption-Techniques
+
+Encryption is an interesting piece of technology that works by scrambling data so it is unreadable by unintended parties. The technology comes in many forms, with key size and strength generally being the biggest differences in one variety from the next. This repo has implementations of different encryption techniques. More [here](https://en.wikipedia.org/wiki/Encryption).
+
+**[CODE](Encrytion-Techniques/)**
+
+----------------------------------------------------
+
+
 
 ## Getting started with Python
 
@@ -125,8 +140,8 @@ New to Python? No problem! Take a look at the following resources:
 
 - [Python beginners guide](https://wiki.python.org/moin/BeginnersGuide)
 - [Python course by Google](https://developers.google.com/edu/python/) (online course)
-- [Learn Python the hard way](https://learnpythonthehardway.org/book/) (book)
-- [MIT: introduction to Computer Science and programming in Python](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/) (open courseware)
+- [Learn Python the Hard Way](https://learnpythonthehardway.org/book/) (book)
+- [MIT: Introduction to Computer Science and Programming in Python](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/) (open courseware)
 - [Python for Developers](http://ricardoduarte.github.io/python-for-developers/)(book)
 - [How to Think Like a Computer Scientist](http://openbookproject.net/thinkcs/python/english3e/)(book)
 - [Byte of Python](https://python.swaroopch.com/)(book)

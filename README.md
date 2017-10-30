@@ -17,6 +17,7 @@ New to Python? Take a look [here](https://github.com/prateekiiest/Code-Sleep-Pyt
 ## Projects
 
 * [Tic-Tac-Toe](https://github.com/prateekiiest/Code-Sleep-Python#tic-tac-toe)
+* [Hangman](https://github.com/prateekiiest/Code-Sleep-Python#Hangman)
 * [Caesar-Cipher](https://github.com/prateekiiest/Code-Sleep-Python#caesar-cipher)
 * [Translations of Hamlet](https://github.com/prateekiiest/Code-Sleep-Python#translations-of-hamlet)
 * [Classification](https://github.com/prateekiiest/Code-Sleep-Python#classification)
@@ -40,6 +41,17 @@ Tic-Tac-Toe (or noughts and crosses) is a simple strategy game in which two play
 **[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/tic-tac-toe/code.py)**
 
 -----------------------------------
+
+### Hangman
+
+Hangman is a simple game where a player will guess a word letter by letter.
+![](http://daramcq.github.io/img/hangman-game-5.png)
+
+In this project, you will create a program that generates a random word that you must guess. 
+
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Hangman/code.py)
+
+--------------------------------------------
 
 ### Caesar-Cipher
 

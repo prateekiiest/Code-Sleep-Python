@@ -11,4 +11,6 @@ Thanks for all your contributions :heart: :octocat:
 | [blossomica](https://github.com/blossomica) |[Fix Broken Code Links](https://github.com/prateekiiest/Code-Sleep-Python/pull/18) | Merged | 
 | [jasperdchen](https://github.com/jasperdchen) | [README](https://github.com/prateekiiest/Code-Sleep-Python/pull/31) | Merged |
 | [Binsquare](https://github.com/binsquare) | [Added project descriptions](https://github.com/prateekiiest/Code-Sleep-Python/pull/26) | Merged |
+| [Chathumina Vimukthi](https://github.com/ChathuminaVimukthi)  |[Added hangman game](https://github.com/prateekiiest/Code-Sleep-Python/pull/30) | Merged |
+
 

@@ -1,5 +1,4 @@
 import numpy as np
-
 def create_board():
     x = np.zeros((3,3))
     return x

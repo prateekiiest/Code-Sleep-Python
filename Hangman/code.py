@@ -73,4 +73,4 @@ if __name__ == '__main__':
 	if num_guesses < 6:
 		print("Congratulations! You correctly guessed the word {}".format(WORD))
 	else:
-		print("Sorry, you list! Your word was {}".format(WORD))
+		print("Sorry, you lost! Your word was {}".format(WORD))

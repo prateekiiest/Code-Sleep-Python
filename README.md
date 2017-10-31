@@ -22,13 +22,13 @@ New to Python? Take a look [here](https://github.com/prateekiiest/Code-Sleep-Pyt
 * [Translations of Hamlet](https://github.com/prateekiiest/Code-Sleep-Python#translations-of-hamlet)
 * [Classification](https://github.com/prateekiiest/Code-Sleep-Python#classification)
 * [Whisky Classification](https://github.com/prateekiiest/Code-Sleep-Python#whisky-classification)
-* [Bird Migration](https://github.com/prateekiiest/Code-Sleep-Python#whisky-classification)
-* [Social Network Analysis](https://github.com/prateekiiest/Code-Sleep-Python#whisky-classification)
 * [Bird Migration](https://github.com/prateekiiest/Code-Sleep-Python#Bird_mirgation)
 * [Social Network Analysis](https://github.com/prateekiiest/Code-Sleep-Python#social_network)
 * [Prime](https://github.com/prateekiiest/Code-Sleep-Python#Prime)
 * [Website status check](https://github.com/prateekiiest/Code-Sleep-Python#website_status_check)
 * [Encryption-Techniques](#Encryption-Techniques)
+* [Inception Tic-Tac-Toe](https://github.com/prateekiiest/Code-Sleep-Python#inception_tic-tac-toe)
+* [Sprint](https://github.com/prateekiiest/Code-Sleep-Python#sprint)
 
 ----------------------------------
 
@@ -146,6 +146,19 @@ Encryption is an interesting piece of technology that works by scrambling data s
 
 ----------------------------------------------------
 
+----------------------------------------------------
+
+### Inception Tic-Tac-Toe
+
+**[Code](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Inception%20TicTacToe/inceptionTTT.py)**
+
+----------------------------------------------------
+
+### Sprint
+
+**[Code](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Sprint/sprint.py)**
+
+----------------------------------------------------
 
 
 ## Getting started with Python

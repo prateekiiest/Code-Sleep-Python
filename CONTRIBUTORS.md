@@ -14,6 +14,5 @@ Thanks for all your contributions :heart: :octocat:
 | [bhansa](https://github.com/bhansa) | [Added new method for sieve of Eratosthenes](https://github.com/prateekiiest/Code-Sleep-Python/pull/10) | Merged |
 | [Chathumina Vimukthi](https://github.com/ChathuminaVimukthi)  |[Added hangman game](https://github.com/prateekiiest/Code-Sleep-Python/pull/30) | Merged |
 | [Aditya Malu](https://github.com/aditya1904) | [Different Encryption Techniques added](https://github.com/prateekiiest/Code-Sleep-Python/pull/29) | Merged |
-| [d.d.rohit](https://github.com/https://github.com/ddrohit/)| [Nothing Till now](https://github.com/nothig) | test |
 | [vibhavagarwal5](https://github.com/vibhavagarwal5)| [Added TicTacToe game](https://github.com/prateekiiest/Code-Sleep-Python/pull/49) | Merged |
 

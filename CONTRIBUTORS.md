@@ -15,4 +15,4 @@ Thanks for all your contributions :heart: :octocat:
 | [Chathumina Vimukthi](https://github.com/ChathuminaVimukthi)  |[Added hangman game](https://github.com/prateekiiest/Code-Sleep-Python/pull/30) | Merged |
 | [Aditya Malu](https://github.com/aditya1904) | [Different Encryption Techniques added](https://github.com/prateekiiest/Code-Sleep-Python/pull/29) | Merged |
 | [vibhavagarwal5](https://github.com/vibhavagarwal5)| [Added TicTacToe game](https://github.com/prateekiiest/Code-Sleep-Python/pull/49) | Merged |
-
+| [alyssa-cooper](https://github.com/alyssa-cooper)   | [README](https://github.com/prateekiiest/Code-Sleep-Python/pull/5) | Merged |

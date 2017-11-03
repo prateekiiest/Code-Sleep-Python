@@ -1,6 +1,6 @@
 # Code Sleep Python
 
-![](https://images7.alphacoders.com/679/679140.png)
+![](codesleeppython.png)
 
 ## About
 

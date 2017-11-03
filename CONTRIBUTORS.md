@@ -16,3 +16,4 @@ Thanks for all your contributions :heart: :octocat:
 | [Aditya Malu](https://github.com/aditya1904) | [Different Encryption Techniques added](https://github.com/prateekiiest/Code-Sleep-Python/pull/29) | Merged |
 | [vibhavagarwal5](https://github.com/vibhavagarwal5)| [Added TicTacToe game](https://github.com/prateekiiest/Code-Sleep-Python/pull/49) | Merged |
 | [alyssa-cooper](https://github.com/alyssa-cooper)   | [README](https://github.com/prateekiiest/Code-Sleep-Python/pull/5) | Merged |
+| [st900278](https://github.com/st900278) | [find prime in range](https://github.com/prateekiiest/Code-Sleep-Python/pull/9) | Merged |

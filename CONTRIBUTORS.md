@@ -1,8 +1,11 @@
 ### List of Contributors
 
+#### Hacktoberfest
+
 Thanks for all your contributions :heart: :octocat:
 
-@prateekiiest : CodeOwner
+
+[prateekiiest](https://github.com/prateekiiest) : CodeOwner
 
 | Github username      | Pull Request           | Status  |
 | ------------- |:-------------:| -----:|

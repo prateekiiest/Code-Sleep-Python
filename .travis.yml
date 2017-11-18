@@ -10,3 +10,7 @@ python:
     - 2.7
     - 3.5
     - 3.6
+
+
+script:
+  - pytest # or py.test for Python versions 3.5 and below

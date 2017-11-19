@@ -3,7 +3,6 @@ from yahoo_finance import Share
 db = MySQLdb.connect("localhost", "root", "root", "chatbot")
 cursor = db.cursor()
 
-
 def insert_stock(ticker, quantity, buying_price):
 	query = "insert into portfolio values('" + ticker + "', " + str(quantity) + " , "+ str(buying_price) + ")"
 	try:
@@ -21,7 +20,6 @@ def calculate_profit():
 	cursor.execute(query)
 	results = cursor.fetchall()
 	profit = 0.00
-
 	for t in results:
 		ticker = t[0]
 		quantity = int(t[1])

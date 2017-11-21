@@ -14,6 +14,14 @@ The repository is still under development. Only the source code has been uploade
 
 New to Python? Take a look [here](https://github.com/prateekiiest/Code-Sleep-Python#getting-started-with-python).
 
+## KWOC
+
+We are glad to partner with IIT Kharagpur as a part of the Kharagpur Winter of Code. We are proud to host this Open Source event during the winter months and we hope you have a great winter this year.
+
+See Project Ideas [here](https://github.com/prateekiiest/Code-Sleep-Python/wiki/Winter-of-Code-Project)  and application procedure [here](https://github.com/prateekiiest/Code-Sleep-Python/wiki/Winter-of-Code-Application)
+
+
+
 ## Projects
 
 * [Tic-Tac-Toe](https://github.com/prateekiiest/Code-Sleep-Python#tic-tac-toe)

@@ -14,4 +14,4 @@ def check_url(url):
         return "Website not found!"        
 
 url=input("Please enter a website, inclusive of 'http://' > ")
-print(check_url(url))
+print check_url(url)

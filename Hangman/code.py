@@ -5,7 +5,8 @@ def pick_random_word():
 	This function picks a random word from the SOWPODS
 	dictionary. 
 	"""
-	# open the sowpods dictionary
+	# open the sowpods dictionary as a text file in readable format
+	# for more information on opening files visit https://pythontips.com/2014/01/15/the-open-function-explained/
 	with open("sowpods.txt", 'r') as f:
 		words = f.readlines()
 
@@ -14,6 +15,7 @@ def pick_random_word():
 	index = random.randint(0, len(words) - 1)
 
 	# print out the word at that index
+	# the .strip() function removes all trailing spaces before and after the word
 	word = words[index].strip()
 	return word
 
@@ -30,13 +32,19 @@ def generate_word_string(word, letters_guessed):
 			output.append(letter.upper())
 		else:
 			output.append("_")
+
+	# creates a string from the members of the list by using whitespace as a separator
 	return " ".join(output)
 
-
+# make sure that the module is being run standalone and not imported by another user
+# visit http://ibiblio.org/g2swap/byteofpython/read/module-name.html for more information
 if __name__ == '__main__':
 	WORD = pick_random_word()
 
+	# creates a set containing the letters of WORD
 	letters_to_guess = set(WORD)
+
+	# creates an empty set
 	correct_letters_guessed = set()
 	incorrect_letters_guessed = set()
 	num_guesses = 0
@@ -69,7 +77,7 @@ if __name__ == '__main__':
 		print(word_string)
 		print("You have {} guesses left".format(6 - num_guesses))
 
-	# tell the user they have won or lost
+	# tell the user whether they have won or lost
 	if num_guesses < 6:
 		print("Congratulations! You correctly guessed the word {}".format(WORD))
 	else:

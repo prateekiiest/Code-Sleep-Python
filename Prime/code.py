@@ -1,4 +1,3 @@
-import time
 from math import sqrt, ceil
 
 
@@ -8,7 +7,7 @@ def segmented_sieve(range_from, range_to):
     memory to find the prime numbers in a given range.
 
     Space complexity: O(l)
-    Time complexity: O(l log(logl))
+    Time complexity: O(l * log(logl))
 
     l =  range_to - range_from
     """
@@ -20,7 +19,7 @@ def segmented_sieve(range_from, range_to):
     # initialize a boolean list of size l, with True.
     primes_range = [True for _ in range(range_to - range_from + 1)]
 
-    # generate primes upto sqrt(range_to) using SieveOfEratosthenes.
+    # generate primes upto sqrt(range_to) using Sieve of Eratosthenes.
     primes = sieve_eratosthenes(ceil(sqrt(range_to)))
 
     # for every prime, all its multiples will not be prime

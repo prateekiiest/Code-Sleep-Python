@@ -10,7 +10,7 @@ python:
   - "2.6"
   - "2.7"
   - "3.2"
-  
+ 
 # command to install dependencies
     
 install:
@@ -20,4 +20,4 @@ install:
 
 
 script:
-  - pytest # or py.test for Python versions 3.5 and below
+  - py.test # or py.test for Python versions 3.5 and below

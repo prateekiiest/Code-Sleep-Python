@@ -40,7 +40,6 @@ def generate_word_string(word, letters_guessed):
 # visit http://ibiblio.org/g2swap/byteofpython/read/module-name.html for more information
 if __name__ == '__main__':
     WORD = pick_random_word()
-    print(WORD)
 
     # creates a set containing the letters of WORD
     letters_to_guess = set(WORD)

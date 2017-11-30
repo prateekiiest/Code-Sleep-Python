@@ -5,5 +5,6 @@ scipy >= 0.19
 scikit-learn >= 0.19
 bokeh >= 0.12
 requests >= 2.18
+msvcrt >= 0.14.0
 
 

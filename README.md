@@ -100,7 +100,7 @@ In this case study, we will analyze a dataset consisting of an assortment of win
 
 ### Whisky Classification
 
-In this case study, we have prepared step-by-step instructions for you on how to prepare plots in Bokeh, a library designed for simple and interactive plotting. We will demonstrate Bokeh by continuing the analysis of Scotch whiskies.
+In this case study, we have prepared step-by-step instructions for you on how to prepare plots in Bokeh, a library designed for simple and interactive plotting. We will demonstrate Bokeh by continuing the analysis of Scotch whiskies.You can go through the article - **[here](http://www.geeksforgeeks.org/project-scikit-learn-whisky-clustering/)**
 
 **[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/whisky_classification/code.py)**
 
@@ -108,7 +108,7 @@ In this case study, we have prepared step-by-step instructions for you on how to
 
 ### Bird Migration
 
-In this case study, we will continue taking a look at patterns of flight for each of the three birds in our dataset.
+In this case study, we will continue taking a look at patterns of flight for each of the three birds in our dataset.Documentation of this project available - **[here](http://www.geeksforgeeks.org/tracking-bird-migration-using-python-3/)**
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/BrantaLeucopsisMigration.jpg/300px-BrantaLeucopsisMigration.jpg)
 

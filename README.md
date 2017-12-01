@@ -166,6 +166,16 @@ Encryption is an interesting piece of technology that works by scrambling data s
 
 ----------------------------------------------------
 
+### Snakes
+
+This is a simple python implementation of the classical game "snake".Use the arrow keys to move the snake in the turtle canvas.
+
+![](https://github.com/SKKSaikia/Code-Sleep-Python/blob/master/snake-py/x.gif)
+
+**[CODE](https://github.com/SKKSaikia/Code-Sleep-Python/blob/master/snake-py/snake.py)**
+
+----------------------------------------------------
+
 ### Sprint
 
 **[Code](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Sprint/sprint.py)**

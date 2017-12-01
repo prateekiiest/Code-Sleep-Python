@@ -1,6 +1,11 @@
 # Code Sleep Python
 
+[![codebeat badge](https://codebeat.co/badges/d22e7b1f-d101-47c4-a866-a843459e516c)](https://codebeat.co/projects/github-com-prateekiiest-code-sleep-python-master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8a2a1adf12034f0ab92d99dac6da7ef8)](https://www.codacy.com/app/prateekkol21/Code-Sleep-Python?utm_source=github.com&utm_medium=referral&utm_content=prateekiiest/Code-Sleep-Python&utm_campaign=badger)
+[![Maintainability](https://api.codeclimate.com/v1/badges/54f5bbd3a632b0a069da/maintainability)](https://codeclimate.com/github/prateekiiest/Code-Sleep-Python/maintainability)
+[![Build status](https://ci.appveyor.com/api/projects/status/ugq1vwa8045p307g?svg=true)](https://ci.appveyor.com/project/prateekiiest/code-sleep-python)
+[![Build Status](https://travis-ci.org/prateekiiest/Code-Sleep-Python.svg?branch=master)](https://travis-ci.org/prateekiiest/Code-Sleep-Python)
+
 
 # Join Slack through this [link](https://join.slack.com/t/code-sleep-python/shared_invite/enQtMjc1NDk2ODk4Mjc2LTI3NmM1OWQ5YjcwYzlkN2YxNmZhNWI2NzE0M2Q4MTNiMzM0Y2RmMzg4YWVkODEwNWI3NTUyN2E0OGY5OWZmZTQ)
 

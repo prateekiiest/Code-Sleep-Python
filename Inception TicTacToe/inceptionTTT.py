@@ -2,6 +2,7 @@ from Tkinter import *
 import tkMessageBox
 import random
 
+
 class pvp_app(Frame):
 	def __init__(self):
 		Frame.__init__(self)

@@ -3,6 +3,7 @@ language: python
 os:
     - linux
 
+env: NUMPY_VERSION=stable
 
 sudo: false
 

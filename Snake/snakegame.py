@@ -26,14 +26,12 @@ while True:
 	if xs[0] < 0 or xs[0] > 580 or ys[0] < 0 or ys[0] > 580: die(s, score)
 	i = len(xs)-1
 	while i >= 1:
-		xs[i] = xs[i-1];ys[i] = ys[i-1];i -= 1
-	if dirs==0:ys[0] += 20
-	elif dirs==1:xs[0] += 20
-	elif dirs==2:ys[0] -= 20
-	elif dirs==3:xs[0] -= 20	
-	s.fill((255, 255, 255))	
+		xs[i]=xs[i-1];ys[i]=ys[i-1];i-= 1
+	if dirs==0:ys[0]+= 20
+	elif dirs==1:xs[0]+= 20
+	elif dirs==2:ys[0]-= 20
+	elif dirs==3:xs[0]-= 20	
+	s.fill((255,255,255))	
 	for i in range(0, len(xs)):
 		s.blit(img, (xs[i], ys[i]))
 	s.blit(appleimage, applepos);t=f.render(str(score), True, (0, 0, 0));s.blit(t, (10, 10));pygame.display.update()
-					
-					

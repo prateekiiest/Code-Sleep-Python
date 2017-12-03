@@ -23,8 +23,8 @@ if __name__ == "__main__":
     penup()                     #Pull the pen up – no drawing when moving.
     #Move the turtle backward by distance, opposite to the direction the turtle is headed.
     #Do not change the turtle’s heading.
-    backward(length/2.0)        
-    pendown()  
+    backward(length/2.0)
+    pendown()
     for i in range(3):
          #Pull the pen down – drawing when moving.
          snowflake(length, 4)

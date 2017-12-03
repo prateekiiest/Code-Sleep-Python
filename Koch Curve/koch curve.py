@@ -6,7 +6,9 @@ from turtle import *
 def snowflake(lengthSide, levels):
     if levels == 0:
         forward(lengthSide)
-        return
+        return        #if the levels became zero then stop returning
+    #to use the length side by 1/3rd of the previous
+    #length since we are trisecting the line (koch curve logics to create the fractal)
     lengthSide /= 3.0
     snowflake(lengthSide, levels-1)
     left(60)

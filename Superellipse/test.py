@@ -12,7 +12,7 @@ na=2/n
 step=100
 piece=(pi*2)/step
 xp=[]
-yp=[] 
+yp=[]
 t=0
 for t1 in range(step+1):
 	# because sin^n(x) is mathematically the same as (sin(x))^n...

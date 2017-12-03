@@ -11,7 +11,8 @@ na=2/n
 # defining the accuracy
 step=100
 piece=(pi*2)/step
-xp=[];yp=[] 
+xp=[]
+yp=[] 
 t=0
 for t1 in range(step+1):
 	# because sin^n(x) is mathematically the same as (sin(x))^n...

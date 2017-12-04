@@ -47,7 +47,7 @@ We are glad to partner with IIT Kharagpur as a part of the Kharagpur Winter of C
 * [Encryption-Techniques](#Encryption-Techniques)
 * [Inception Tic-Tac-Toe](https://github.com/prateekiiest/Code-Sleep-Python#inception_tic-tac-toe)
 * [Sprint](https://github.com/prateekiiest/Code-Sleep-Python#sprint)
-* [Floating Text](https://github.com/prateekiiest/Code-Sleep-Python#floating_text)
+* [Floating Text](#floating_text)
 
 ----------------------------------
 

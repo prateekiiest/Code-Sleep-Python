@@ -2,7 +2,11 @@ import pygame
 import random
 import sys
 from pygame.locals import *
-def collide(x1,x2,y1,y2,w1,w2,h1,h2):
+def collide(x1,x2,y1,y2,wh):
+	w1=20;
+	w2=wh;
+	h2=wh;
+	h1=20;
 	if x1+w1>x2 and x1<x2+w2 and y1+h1>y2 and y1<y2+h2:
 		return True
 	else:
@@ -44,10 +48,10 @@ while True:
 				dirs=1
 	i=len(xs)-1
 	while i>=2:
-		if collide(xs[0],xs[i],ys[0],ys[i],20,20,20,20):
+		if collide(xs[0],xs[i],ys[0],ys[i],20):
 			die(s,score)
 		i-=1
-	if collide(xs[0],applepos[0],ys[0],applepos[1], 20, 10, 20, 10):
+	if collide(xs[0],applepos[0],ys[0],applepos[1],10):
 		score+=1;
 		xs.append(700);
 		ys.append(700);

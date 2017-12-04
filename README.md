@@ -47,6 +47,7 @@ We are glad to partner with IIT Kharagpur as a part of the Kharagpur Winter of C
 * [Encryption-Techniques](#Encryption-Techniques)
 * [Inception Tic-Tac-Toe](https://github.com/prateekiiest/Code-Sleep-Python#inception_tic-tac-toe)
 * [Sprint](https://github.com/prateekiiest/Code-Sleep-Python#sprint)
+* [Floating Text](https://github.com/prateekiiest/Code-Sleep-Python#floating_text)
 
 ----------------------------------
 
@@ -178,6 +179,15 @@ Encryption is an interesting piece of technology that works by scrambling data s
 
 ----------------------------------------------------
 
+### Floating Text
+
+Floating Text is a simple program which displays a given String as a floating string on the terminal.
+
+![demo](/floating_text/floating_text.gif)
+
+**[CODE](/floating_text/floating_text.py)**
+
+----------------------------------------------------
 
 ## Getting started with Python
 

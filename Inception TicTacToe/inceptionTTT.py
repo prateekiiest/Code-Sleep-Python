@@ -178,34 +178,35 @@ class pvp_app(Frame):
 								self.button_lst[a][b].config(state=DISABLED)
 						break
 
-'''		#list of possible win combinations in the form of button numbers
-        WinCombo=[[1,2,3], [4,5,6], [7,8,9],    #rows   
-                  [1,4,7], [2,5,8], [3,6,9],    #columns
-                  [1,5,9], [3,5,7]]             #diagonals
+		'''		
+		#list of possible win combinations in the form of button numbers
+		        WinCombo=[[1,2,3], [4,5,6], [7,8,9],    #rows   
+		                  [1,4,7], [2,5,8], [3,6,9],    #columns
+		                  [1,5,9], [3,5,7]]             #diagonals
 
-        #after doing sums look for 3 or -3 to find if there was a winner
-        for i in WinCombo:                                                                      
-            if((self.bState[i[0]]+self.bState[i[1]]+self.bState[i[2]])==3):                     #3 means player1 has won
-                self.start_label.config(text="Player 1 won!!")                                  #label if player 1 is won
-                self.GameDone=TRUE
-                for k in range(1,10):
-                    self.button_lst[k].configure(state=DISABLED)
-                break
-            elif((self.bState[i[0]]+self.bState[i[1]]+self.bState[i[2]])==-3):                  #-3 means player2 has won
-                self.start_label.config(text="Player 2 won!!")                                  #label if player 2 is won
-                self.GameDone=TRUE
-                for k in range(1,10):
-                    self.button_lst[k].configure(state=DISABLED)
-                break
-            else:
-                                                                                                
-                if not (0 in self.bState):                                                      #if there is no 0 in button state , the game is done
-                    self.start_label.config(text="Match drawn!!")                               #label if match is drawn
-                    self.GameDone=TRUE
-                    for k in range(1,10):
-                        self.button_lst[k].configure(state=DISABLED)
-                    break
-'''
+		        #after doing sums look for 3 or -3 to find if there was a winner
+		        for i in WinCombo:                                                                      
+		            if((self.bState[i[0]]+self.bState[i[1]]+self.bState[i[2]])==3):                     #3 means player1 has won
+		                self.start_label.config(text="Player 1 won!!")                                  #label if player 1 is won
+		                self.GameDone=TRUE
+		                for k in range(1,10):
+		                    self.button_lst[k].configure(state=DISABLED)
+		                break
+		            elif((self.bState[i[0]]+self.bState[i[1]]+self.bState[i[2]])==-3):                  #-3 means player2 has won
+		                self.start_label.config(text="Player 2 won!!")                                  #label if player 2 is won
+		                self.GameDone=TRUE
+		                for k in range(1,10):
+		                    self.button_lst[k].configure(state=DISABLED)
+		                break
+		            else:
+		                                                                                                
+		                if not (0 in self.bState):                                                      #if there is no 0 in button state , the game is done
+		                    self.start_label.config(text="Match drawn!!")                               #label if match is drawn
+		                    self.GameDone=TRUE
+		                    for k in range(1,10):
+		                        self.button_lst[k].configure(state=DISABLED)
+		                    break
+		'''
 
 		if(self.GameDone==TRUE):
 			self.message=tkMessageBox.askquestion(" ","Do you want to play the game again?")

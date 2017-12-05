@@ -1,4 +1,4 @@
-import os
+#import os
 import time
 
 width =79

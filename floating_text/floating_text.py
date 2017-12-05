@@ -178,7 +178,7 @@ for row in range(5):
 
 offset = width
 while True:
-    os.system("cls") #clears the terminal to show the output.
+   #os.system("cls") #clears the terminal to show the output.
     for row in range(5):
         print(" " * offset + printedtext[row][max(0,offset*-1):width - offset])
     offset -=1

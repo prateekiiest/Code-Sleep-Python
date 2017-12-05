@@ -35,16 +35,16 @@ We are glad to partner with IIT Kharagpur as a part of the Kharagpur Winter of C
 ## Projects
 
 * [Tic-Tac-Toe](https://github.com/prateekiiest/Code-Sleep-Python#tic-tac-toe)
-* [Hangman](https://github.com/prateekiiest/Code-Sleep-Python#Hangman)
+* [Hangman](https://github.com/prateekiiest/Code-Sleep-Python#hangman)
 * [Caesar-Cipher](https://github.com/prateekiiest/Code-Sleep-Python#caesar-cipher)
 * [Translations of Hamlet](https://github.com/prateekiiest/Code-Sleep-Python#translations-of-hamlet)
 * [Classification](https://github.com/prateekiiest/Code-Sleep-Python#classification)
 * [Whisky Classification](https://github.com/prateekiiest/Code-Sleep-Python#whisky-classification)
 * [Bird Migration](https://github.com/prateekiiest/Code-Sleep-Python#Bird_mirgation)
 * [Social Network Analysis](https://github.com/prateekiiest/Code-Sleep-Python#social_network)
-* [Prime](https://github.com/prateekiiest/Code-Sleep-Python#Prime)
+* [Prime](https://github.com/prateekiiest/Code-Sleep-Python#prime-number-finder)
 * [Website status check](https://github.com/prateekiiest/Code-Sleep-Python#website_status_check)
-* [Encryption-Techniques](#Encryption-Techniques)
+* [Encryption-Techniques](https://github.com/prateekiiest/Code-Sleep-Python#Encryption-Techniques)
 * [Inception Tic-Tac-Toe](https://github.com/prateekiiest/Code-Sleep-Python#inception_tic-tac-toe)
 * [Sprint](https://github.com/prateekiiest/Code-Sleep-Python#sprint)
 

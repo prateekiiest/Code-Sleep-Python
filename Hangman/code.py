@@ -121,8 +121,7 @@ if __name__ == '__main__':
         print(word_string)
         print("You have {} guesses left".format(num_guesses))
         draw_hangman(num_guesses)
-        
-    # tell the user whether they have won or lost
+        # tell the user whether they have won or lost
     if num_guesses > 0:
         print("Congratulations! You correctly guessed the word {}".format(WORD))
     else:

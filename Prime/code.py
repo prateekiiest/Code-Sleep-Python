@@ -1,38 +1,7 @@
 from math import sqrt, ceil
 
 
-def segmented_sieve(range_from, range_to):
-    """
-    Segmented sieve helps in providing a efficient way in terms of
-    memory to find the prime numbers in a given range.
 
-    Space complexity: O(l)
-    Time complexity: O(l * log(logl))
-
-    l =  range_to - range_from
-    """
-
-    # if the range starts from 1, incerement it.
-    if range_from == 1:
-        range_from += 1
-
-    # initialize a boolean list of size l, with True.
-    primes_range = [True for _ in range(range_to - range_from + 1)]
-
-    # generate primes upto sqrt(range_to) using Sieve of Eratosthenes.
-    primes = sieve_eratosthenes(ceil(sqrt(range_to)))
-
-    # for every prime, all its multiples will not be prime
-    for prime in primes:
-        prime_multiple = max(range_from // prime, 2) * prime
-
-        # cross off all the multiple of the prime number.
-        for i in range(prime_multiple, range_to + 1, prime):
-            if i >= range_from:
-                primes_range[i - range_from] = False
-
-    # return a list of prime numbers from range_from to range_to
-    return [range_from + i for i, prime in enumerate(primes_range) if prime]
 
 
 def sieve_eratosthenes(range_to):
@@ -102,6 +71,5 @@ if __name__ == "__main__":
     range_from = int(input("From: "))
     range_to = int(input("To: "))
 
-    print("Brute force:", prime(range_from, range_to), end="\n\n")
-    print("Sieve of Eratosthenes:", sieve_eratosthenes(range_to), end="\n\n")
-    print("Segmented Sieve:", segmented_sieve(range_from, range_to))
+    print("Primes in the range: ", sieve_eratosthenes(range_to))
+    

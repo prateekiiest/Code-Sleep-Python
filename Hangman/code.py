@@ -42,10 +42,9 @@ def draw_hangman(i):
 |   
 |  
 |  
-|''',''
-]    
+|''','']
     print(Graphics[i])
-    		 
+
 def pick_random_word():
     # This function picks a random word from the SOWPODS dictionary.
     # open the sowpods dictionary as a text file in readable format

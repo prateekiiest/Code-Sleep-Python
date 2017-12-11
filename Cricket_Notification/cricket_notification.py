@@ -4,13 +4,7 @@ import json
 
 url = "http://cricapi.com/api/matches?apikey=D18haZnedRZ3QijAQEJJV97U5r23"
 r = requests.get(url)
-print(r)
-print(r.text)
-
 data = json.loads(r.text)
-print(data)
-print(data['matches'][0])
-print (data['matches'][0]['team-1'])
 
 id=""
 for item in data['matches']:
@@ -18,7 +12,6 @@ for item in data['matches']:
         print(item)
         if item["matchStarted"]:
             id=item["unique_id"]
-print(id)
 
 if id:
     r = requests.get("http://cricapi.com/api/cricketScore?apikey=D18haZnedRZ3QijAQEJJV97U5r23&unique_id="+str(id))

@@ -3,21 +3,25 @@ language: python
 os:
     - linux
 
+env: NUMPY_VERSION='stable'
 
 sudo: false
 
 python:
-  - "2.6"
   - "2.7"
-  - "3.2"
+  
  
 # command to install dependencies
-    
-install:
-  - pip install -r requirements.txt
-  - pip3 install -r requirements.txt
-# command to run tests    
 
+
+install:
+    
+    - git clone git://github.com/astropy/ci-helpers.git
+    - source ci-helpers/travis/setup_conda.sh
+    
+
+
+# command to run tests    
 
 script:
   - py.test # or py.test for Python versions 3.5 and below

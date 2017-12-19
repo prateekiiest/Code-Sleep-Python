@@ -174,8 +174,8 @@ def get_coordinates(button):
     This function returns the coordinates of the button clicked.
     """
     global buttons
-    for x in range(len(buttons)):
-        for y in range(len(buttons[x])):
+    for x, _ in enumerate(buttons):
+        for y, _ in enumerate(buttons[x]):
             if buttons[x][y] == button:
                 return x, y
 
@@ -241,12 +241,12 @@ def next_move(board, player):
     if c is 0:
         return 0, -1
     _list = []
-    for i in range(len(board)):
+    for i, _ in enumerate(board):
         if board[i] == '-':
             _list.append(i)
     for i in _list:
         board[i] = player
-        ret, move = next_move(board, nextplayer)
+        ret, _ = next_move(board, nextplayer)
         res_list.append(ret)
         board[i] = '-'
     if player is 'X':

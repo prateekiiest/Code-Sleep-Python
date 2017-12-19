@@ -191,8 +191,8 @@ def get_button(x, y):
 def calculate_board():
     global buttons
     board = []
-    for x in range(len(buttons)):
-        for y in range(len(buttons[x])):
+    for x,_ in enumerate(buttons):
+        for y,_ in enumerate(buttons[x]):
             if buttons[x][y]['text'] != " ":
                 board.append(buttons[x][y]['text'])
             else:

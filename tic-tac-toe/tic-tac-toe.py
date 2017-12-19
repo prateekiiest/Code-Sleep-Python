@@ -43,7 +43,7 @@ def create_frames(root):
         height=1,
         width=2,
         text="Reset",
-        command=lambda: reset_game())
+        command=reset_game)
     buttonReset.pack(side=LEFT)
 
 
@@ -77,7 +77,7 @@ def on_click(button):
     board = calculate_board()
     if board.count('X') != board.count(
             'O') and board.count('X') + board.count('O') != 9:
-        a, b = next_move(board, "O")
+        _, b = next_move(board, "O")
         button_to_change = get_button(b / 3, b % 3)
         if count % 2 == 0:
             sym = "X"

@@ -1,5 +1,17 @@
 import random  # import random library
 
+# method to draw hangman
+def draw_hangman(i):
+    Graphics =['''_____\n|/  |\n|   O\n|  /|\\\n|  / \\\n|''',
+    '''_____\n|/\n|   O\n|  /|\\\n|  / \\\n|''',
+    '''_____\n|/\n|   O\n|  /|\\\n|  /\n|''',
+    '''_____\n|/\n|   O\n|  /|\\\n|\n|''',
+    '''_____\n|/\n|   O\n|  /|\n|\n|''',
+    '''_____\n|/\n|   O\n|   |\n|\n|''',
+    '''_____\n|/\n|   O\n|\n|\n|''',
+    '''_____\n|/\n|\n|\n|\n|''',
+    '']
+    print(Graphics[i])
 
 def pick_random_word():
     # This function picks a random word from the SOWPODS dictionary.
@@ -76,8 +88,8 @@ if __name__ == '__main__':
         word_string = generate_word_string(WORD, correct_letters_guessed)
         print(word_string)
         print("You have {} guesses left".format(num_guesses))
-
-    # tell the user whether they have won or lost
+        draw_hangman(num_guesses)
+        # tell the user whether they have won or lost
     if num_guesses > 0:
         print("Congratulations! You correctly guessed the word {}".format(WORD))
     else:

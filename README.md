@@ -51,6 +51,7 @@ We are glad to partner with IIT Kharagpur as a part of the Kharagpur Winter of C
 * [Floating Text](#floating-text)
 * [Koch Curve](https://github.com/prateekiiest/Code-Sleep-Python#koch-curve)
 * [Superellipse](https://github.com/prateekiiest/Code-Sleep-Python#superellipse)
+* [Cricket Notification](https://github.com/prateekiiest/Code-Sleep-Python#cricket-notification)
 
 ----------------------------------
 
@@ -150,7 +151,7 @@ The implementation of Sieve of Eratosthenes is used to find prime numbers.
 
 ----------------------------------------------------
 
-#### Website status check
+### Website status check
 
 A simple website crawler to check the return code of a website. It returns with a message indicating whether the website is online, redirected, or not found.
 
@@ -216,6 +217,16 @@ A superellipse, also known as a Lamé curve after Gabriel Lamé, is a closed cur
 ![](https://upload.wikimedia.org/wikipedia/en/2/24/Superellipse_anim.gif)
 
 **[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Superellipse/test.py)**
+
+----------------------------------------------------
+
+### Cricket Notification
+
+A simple program to get the score and match status if India is playing. This information is obtained from the terminal.
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgwxUvr7AfngMuzr4a8tc69jexGPoPeSdCTiDZhvlXqgZTH_wxgg)
+
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Cricket_Notification/cricket_notification.py)**
 
 ----------------------------------------------------
 

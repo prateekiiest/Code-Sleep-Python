@@ -43,13 +43,14 @@ We are glad to partner with IIT Kharagpur as a part of the Kharagpur Winter of C
 
 * [Bird Migration](https://github.com/prateekiiest/Code-Sleep-Python#bird-migration)
 * [Social Network Analysis](https://github.com/prateekiiest/Code-Sleep-Python#social-network-analysis)
-* [Prime](https://github.com/prateekiiest/Code-Sleep-Python#Prime)
+* [Prime](https://github.com/prateekiiest/Code-Sleep-Python#prime)
 * [Website status check](https://github.com/prateekiiest/Code-Sleep-Python#website-status-check)
 * [Encryption-Techniques](#encryption-techniques)
 * [Inception Tic-Tac-Toe](https://github.com/prateekiiest/Code-Sleep-Python#inception-tic-tac-toe)
 * [Sprint](https://github.com/prateekiiest/Code-Sleep-Python#sprint)
 * [Floating Text](#floating-text)
-* [Koch Curve](https://github.com/prateekiiest/Code-Sleep-Python#Koch-Curve)
+* [Koch Curve](https://github.com/prateekiiest/Code-Sleep-Python#koch-curve)
+* [Superellipse](https://github.com/prateekiiest/Code-Sleep-Python#superellipse)
 
 ----------------------------------
 
@@ -57,7 +58,7 @@ We are glad to partner with IIT Kharagpur as a part of the Kharagpur Winter of C
 
 Tic-Tac-Toe (or noughts and crosses) is a simple strategy game in which two players take turns placing a mark on a 3x3 board, attempting to make a row, column, or diagonal of three with their mark. In this homework, we will use the tools we've covered in the past two weeks to create a Tic-Tac-Toe simulator and evaluate basic winning strategies.
 
-![](https://upload.wikimedia.org/wikipedia/commons/8/8e/TicTacToe-6549127nnXOp.gif) 
+![](https://upload.wikimedia.org/wikipedia/commons/8/8e/TicTacToe-6549127nnXOp.gif)
 
 Players soon discover that best play from both parties leads to a draw. Because of the simplicity of Tic-Tac-Toe, it is often used as a pedagogical tool for teaching the concepts of good sportsmanship and the branch of artificial intelligence that deals with the searching of game trees. It is straightforward to write a computer program to play Tic-Tac-Toe perfectly, to enumerate the 765 essentially different positions (the state space complexity), or the 26.830 possible games up to rotations and reflections (the game tree complexity) on this space.
 
@@ -71,7 +72,7 @@ Hangman is a simple game where a player will guess a word letter by letter.
 
 ![](http://daramcq.github.io/img/hangman-game-5.png)
 
-In this project, you will create a program that generates a random word that you must guess. 
+In this project, you will create a program that generates a random word that you must guess.
 
 **[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Hangman/code.py)**
 
@@ -203,6 +204,18 @@ This program traces out a 4 level Koch curve.
 ![](https://upload.wikimedia.org/wikipedia/commons/f/fd/Von_Koch_curve.gif)
 
 **[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Koch%20Curve/koch%20curve.py)**
+
+----------------------------------------------------
+
+### Superellipse
+
+A superellipse, also known as a Lamé curve after Gabriel Lamé, is a closed curve resembling the ellipse, retaining the geometric features of semi-major axis and semi-minor axis, and symmetry about them, but a different overall shape.
+
+**[more info](https://en.wikipedia.org/wiki/Superellipse)**
+
+![](https://upload.wikimedia.org/wikipedia/en/2/24/Superellipse_anim.gif)
+
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Superellipse/test.py)**
 
 ----------------------------------------------------
 

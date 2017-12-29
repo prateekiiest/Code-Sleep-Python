@@ -1,11 +1,11 @@
 ### List of Contributors
 
-#### Hacktoberfest
-
 Thanks for all your contributions :heart: :octocat:
 
-
 [prateekiiest](https://github.com/prateekiiest) : CodeOwner
+
+
+#### Hacktoberfest
 
 | Github username      | Pull Request           | Status  |
 | ------------- |:-------------:| -----:|
@@ -22,3 +22,11 @@ Thanks for all your contributions :heart: :octocat:
 | [st900278](https://github.com/st900278) | [find prime in range](https://github.com/prateekiiest/Code-Sleep-Python/pull/9) | Merged |
 | [iyanuashiri](https://github.com/iyanuashiri) | [Added a book](https://github.com/prateekiiest/Code-Sleep-Python/pull/4) | Merged |
 | [Brian](https://github.com/BrianMwangi21) | [Added sowpods.txt](https://github.com/prateekiiest/Code-Sleep-Python/pull/74) | Merged |
+
+
+#### Kharagpur Winter of Code
+
+|Github username|Pull Request|Status|
+|---------------|:----------:|:----:|
+|[vchrombie](https://github.com/vchrombie)|[Floating Text](https://github.com/prateekiiest/Code-Sleep-Python/pull/89)|Merged|
+|[imVivekGupta](https://github.com/imVivekGupta)|[README adjusts](https://github.com/prateekiiest/Code-Sleep-Python/pull/98)|Merged|

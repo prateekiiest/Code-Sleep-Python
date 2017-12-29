@@ -6,6 +6,8 @@
 [![Build Status](https://travis-ci.org/prateekiiest/Code-Sleep-Python.svg?branch=master)](https://travis-ci.org/prateekiiest/Code-Sleep-Python)
 
 
+[![chat on Slack](https://img.shields.io/badge/chat%20on%20-Slack-blue.svg)](https://join.slack.com/t/code-sleep-python/shared_invite/enQtMjc1NDk2ODk4Mjc2LTI3NmM1OWQ5YjcwYzlkN2YxNmZhNWI2NzE0M2Q4MTNiMzM0Y2RmMzg4YWVkODEwNWI3NTUyN2E0OGY5OWZmZTQ)
+
 # Join Slack through this [link](https://join.slack.com/t/code-sleep-python/shared_invite/enQtMjc1NDk2ODk4Mjc2LTI3NmM1OWQ5YjcwYzlkN2YxNmZhNWI2NzE0M2Q4MTNiMzM0Y2RmMzg4YWVkODEwNWI3NTUyN2E0OGY5OWZmZTQ)
 
 
@@ -43,13 +45,13 @@ We are glad to partner with IIT Kharagpur as a part of the Kharagpur Winter of C
 
 * [Bird Migration](https://github.com/prateekiiest/Code-Sleep-Python#bird-migration)
 * [Social Network Analysis](https://github.com/prateekiiest/Code-Sleep-Python#social-network-analysis)
-* [Prime](https://github.com/prateekiiest/Code-Sleep-Python#Prime)
+* [Prime](https://github.com/prateekiiest/Code-Sleep-Python#prime-number-finder)
 * [Website status check](https://github.com/prateekiiest/Code-Sleep-Python#website-status-check)
 * [Encryption-Techniques](#encryption-techniques)
 * [Inception Tic-Tac-Toe](https://github.com/prateekiiest/Code-Sleep-Python#inception-tic-tac-toe)
 * [Sprint](https://github.com/prateekiiest/Code-Sleep-Python#sprint)
 * [Floating Text](#floating-text)
-* [Koch Curve](https://github.com/prateekiiest/Code-Sleep-Python#Koch-Curve)
+* [Koch Curve](https://github.com/prateekiiest/Code-Sleep-Python#koch-curve)
 
 ----------------------------------
 

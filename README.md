@@ -52,6 +52,8 @@ We are glad to partner with IIT Kharagpur as a part of the Kharagpur Winter of C
 * [Sprint](https://github.com/prateekiiest/Code-Sleep-Python#sprint)
 * [Floating Text](#floating-text)
 * [Koch Curve](https://github.com/prateekiiest/Code-Sleep-Python#koch-curve)
+* [Superellipse](https://github.com/prateekiiest/Code-Sleep-Python#superellipse)
+* [Cricket Notification](https://github.com/prateekiiest/Code-Sleep-Python#cricket-notification)
 
 ----------------------------------
 
@@ -59,7 +61,7 @@ We are glad to partner with IIT Kharagpur as a part of the Kharagpur Winter of C
 
 Tic-Tac-Toe (or noughts and crosses) is a simple strategy game in which two players take turns placing a mark on a 3x3 board, attempting to make a row, column, or diagonal of three with their mark. In this homework, we will use the tools we've covered in the past two weeks to create a Tic-Tac-Toe simulator and evaluate basic winning strategies.
 
-![](https://upload.wikimedia.org/wikipedia/commons/8/8e/TicTacToe-6549127nnXOp.gif) 
+![](https://upload.wikimedia.org/wikipedia/commons/8/8e/TicTacToe-6549127nnXOp.gif)
 
 Players soon discover that best play from both parties leads to a draw. Because of the simplicity of Tic-Tac-Toe, it is often used as a pedagogical tool for teaching the concepts of good sportsmanship and the branch of artificial intelligence that deals with the searching of game trees. It is straightforward to write a computer program to play Tic-Tac-Toe perfectly, to enumerate the 765 essentially different positions (the state space complexity), or the 26.830 possible games up to rotations and reflections (the game tree complexity) on this space.
 
@@ -73,7 +75,7 @@ Hangman is a simple game where a player will guess a word letter by letter.
 
 ![](http://daramcq.github.io/img/hangman-game-5.png)
 
-In this project, you will create a program that generates a random word that you must guess. 
+In this project, you will create a program that generates a random word that you must guess.
 
 **[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Hangman/code.py)**
 
@@ -151,7 +153,7 @@ The implementation of Sieve of Eratosthenes is used to find prime numbers.
 
 ----------------------------------------------------
 
-#### Website status check
+### Website status check
 
 A simple website crawler to check the return code of a website. It returns with a message indicating whether the website is online, redirected, or not found.
 
@@ -205,6 +207,28 @@ This program traces out a 4 level Koch curve.
 ![](https://upload.wikimedia.org/wikipedia/commons/f/fd/Von_Koch_curve.gif)
 
 **[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Koch%20Curve/koch%20curve.py)**
+
+----------------------------------------------------
+
+### Superellipse
+
+A superellipse, also known as a Lamé curve after Gabriel Lamé, is a closed curve resembling the ellipse, retaining the geometric features of semi-major axis and semi-minor axis, and symmetry about them, but a different overall shape.
+
+**[more info](https://en.wikipedia.org/wiki/Superellipse)**
+
+![](https://upload.wikimedia.org/wikipedia/en/2/24/Superellipse_anim.gif)
+
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Superellipse/test.py)**
+
+----------------------------------------------------
+
+### Cricket Notification
+
+A simple program to get the score and match status if India is playing. This information is obtained from the terminal.
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgwxUvr7AfngMuzr4a8tc69jexGPoPeSdCTiDZhvlXqgZTH_wxgg)
+
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Cricket_Notification/cricket_notification.py)**
 
 ----------------------------------------------------
 

@@ -30,3 +30,4 @@ Thanks for all your contributions :heart: :octocat:
 |---------------|:----------:|:----:|
 |[vchrombie](https://github.com/vchrombie)|[Floating Text](https://github.com/prateekiiest/Code-Sleep-Python/pull/89)|Merged|
 |[imVivekGupta](https://github.com/imVivekGupta)|[README adjusts](https://github.com/prateekiiest/Code-Sleep-Python/pull/98)|Merged|
+|[spm23](https://github.com/spm23)|[SNAKE game added](https://github.com/prateekiiest/Code-Sleep-Python/pull/84)|Merged|

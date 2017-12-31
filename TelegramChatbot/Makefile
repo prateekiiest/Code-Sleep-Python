@@ -1,0 +1,3 @@
+all:
+	rm -r *.pyc
+

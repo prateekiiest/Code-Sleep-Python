@@ -244,7 +244,9 @@ A simple program to get the score and match status if India is playing. This inf
 
 ----------------------------------------------------
 
-## Wanna Contribute.
+## Wanna Contribute ?
+
+![](https://raw.githubusercontent.com/prateekiiest/Code-Sleep-Python/master/contribute.jpg)
 
 Its simple. Just fork/clone the repository and see the **Contributing Guidelines** [here](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/CONTRIBUTING.md)
 

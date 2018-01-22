@@ -1,5 +1,7 @@
 # Code Sleep Python
 
+-------------------------------------------------
+
 [![codebeat badge](https://codebeat.co/badges/d22e7b1f-d101-47c4-a866-a843459e516c)](https://codebeat.co/projects/github-com-prateekiiest-code-sleep-python-master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8a2a1adf12034f0ab92d99dac6da7ef8)](https://www.codacy.com/app/prateekkol21/Code-Sleep-Python?utm_source=github.com&utm_medium=referral&utm_content=prateekiiest/Code-Sleep-Python&utm_campaign=badger)
 [![Build status](https://ci.appveyor.com/api/projects/status/ugq1vwa8045p307g?svg=true)](https://ci.appveyor.com/project/prateekiiest/code-sleep-python)
@@ -14,6 +16,11 @@
 
 ## About
 
+#### If you are into Python and have been writing code in Python for the last few months, you have come to the right place.
+
+This project is for all the **Python lovers** out there.
+
+#### Description
 This repository contains a curated list of some of the awesome small projects made in Python that you can code away this summer.
 
 It includes analysis of different Python modules, a deep analysis of the Python statistics modules and dataframes like Pandas.
@@ -24,13 +31,17 @@ The repository is still under development. Only the source code has been uploade
 
 New to Python? Take a look [here](https://github.com/prateekiiest/Code-Sleep-Python#getting-started-with-python).
 
+
+
+----------------------------------------------
+
 ## KWOC
 
 We are glad to partner with IIT Kharagpur as a part of the Kharagpur Winter of Code. We are proud to host this Open Source event during the winter months and we hope you have a great winter this year.
 
 #### See Project Ideas [here](https://github.com/prateekiiest/Code-Sleep-Python/wiki/Winter-of-Code-Project)
 
-
+----------------------------------------------------
 
 ## Projects
 
@@ -230,7 +241,19 @@ A simple program to get the score and match status if India is playing. This inf
 
 ----------------------------------------------------
 
-## Getting started with Python
+
+----------------------------------------------------
+
+## Wanna Contribute.
+
+Its simple. Just fork/clone the repository and see the **Contributing Guidelines** [here](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/CONTRIBUTING.md)
+
+
+----------------------------------------------------
+
+## New to Python ? Get Started below
+
+### Getting started with Python
 
 New to Python? No problem! Take a look at the following resources:
 
@@ -249,3 +272,5 @@ New to Python? No problem! Take a look at the following resources:
 ## Contributors :octocat:
 
 To see a list of all contributors see [here](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/CONTRIBUTORS.md)
+
+--------------------------

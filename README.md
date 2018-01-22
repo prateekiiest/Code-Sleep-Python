@@ -4,10 +4,8 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8a2a1adf12034f0ab92d99dac6da7ef8)](https://www.codacy.com/app/prateekkol21/Code-Sleep-Python?utm_source=github.com&utm_medium=referral&utm_content=prateekiiest/Code-Sleep-Python&utm_campaign=badger)
 [![Build status](https://ci.appveyor.com/api/projects/status/ugq1vwa8045p307g?svg=true)](https://ci.appveyor.com/project/prateekiiest/code-sleep-python)
 [![Build Status](https://travis-ci.org/prateekiiest/Code-Sleep-Python.svg?branch=master)](https://travis-ci.org/prateekiiest/Code-Sleep-Python)
-
-
+[![License MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/LICENSE)
 [![chat on Slack](https://img.shields.io/badge/chat%20on%20-Slack-blue.svg)](https://join.slack.com/t/code-sleep-python/shared_invite/enQtMjc1NDk2ODk4Mjc2LTI3NmM1OWQ5YjcwYzlkN2YxNmZhNWI2NzE0M2Q4MTNiMzM0Y2RmMzg4YWVkODEwNWI3NTUyN2E0OGY5OWZmZTQ)
-
 [![made with &hearts in Python](https://img.shields.io/badge/made%20with%20%E2%9D%A4%20in-Python-red.svg)](http://shields.io/#your-badge)
 
 

@@ -7,7 +7,7 @@ setup(
     author="Prateek Chanda",
     author_email="prateekkol21@gmail.com",
     license="MIT",
-    packages=['python'],
+    packages=['code_sleep_python'],
     include_package_data=True,
     version="1.0.0",
     classifiers=[

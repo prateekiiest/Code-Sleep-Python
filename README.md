@@ -18,7 +18,7 @@
 
 ## About
 
-#### If you are into Python and have been writing code in Python for the last few months, you have come to the right place.
+**If you are into Python and have been writing code in Python for the last few months, you have come to the right place.**
 
 This project is for all the **Python lovers** out there.
 
@@ -33,13 +33,23 @@ The repository is still under development. Only the source code has been uploade
 
 New to Python? Take a look [here](https://github.com/prateekiiest/Code-Sleep-Python#getting-started-with-python).
 
+#### Downloading and Running
 
+A step-by-step guide to download all the codes from here and test yourself in your local machine.
+
+```
+  git clone https://github.com/prateekiiest/Code-Sleep-Python.git
+
+  cd Code-Sleep-python
+  cd Code-Sleep-Python  # all the codes are present Here
+
+  ipython notebook
+
+```
+This will open a new jupyter notebook in your localhost where you can run all the codes and test it for yourself.
 
 ----------------------------------------------
 
-## KWOC
-
-We are glad to partner with IIT Kharagpur as a part of the Kharagpur Winter of Code. We are proud to host this Open Source event during the winter months and we hope you have a great winter this year.
 
 #### See Project Ideas [here](https://github.com/prateekiiest/Code-Sleep-Python/wiki/Winter-of-Code-Project)
 
@@ -76,7 +86,7 @@ Tic-Tac-Toe (or noughts and crosses) is a simple strategy game in which two play
 
 Players soon discover that best play from both parties leads to a draw. Because of the simplicity of Tic-Tac-Toe, it is often used as a pedagogical tool for teaching the concepts of good sportsmanship and the branch of artificial intelligence that deals with the searching of game trees. It is straightforward to write a computer program to play Tic-Tac-Toe perfectly, to enumerate the 765 essentially different positions (the state space complexity), or the 26.830 possible games up to rotations and reflections (the game tree complexity) on this space.
 
-**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/tic-tac-toe/code.py)**
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Code-Sleep-Python/tic-tac-toe/code.py)**
 
 -----------------------------------
 
@@ -88,7 +98,7 @@ Hangman is a simple game where a player will guess a word letter by letter.
 
 In this project, you will create a program that generates a random word that you must guess.
 
-**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Hangman/code.py)**
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Code-Sleep-Python/Hangman/code.py)**
 
 --------------------------------------------
 
@@ -101,7 +111,7 @@ The Caesar cipher, also known as a shift cipher, is one of the simplest forms of
 
 In this way, a message that initially was quite readable ends up in a form that can not be understood at a simple glance.
 
-**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Caesar-cipher/code.py)**
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Code-Sleep-Python/Caesar-cipher/code.py)**
 
 ------------------------------------------------
 
@@ -111,7 +121,7 @@ In this case study, we will find and plot the distribution of word frequencies f
 
 ![](http://www.aboutlanguageschools.com/images/language-translations.jpg)
 
-**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/translation_hamlet/code.py)**
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Code-Sleep-Python/translation_hamlet/code.py)**
 
 -----------------------------------------------------
 
@@ -121,7 +131,7 @@ In this case study, we will analyze a dataset consisting of an assortment of win
 
 ![](http://homepages.inf.ed.ac.uk/rbf/HIPR2/classb.gif)
 
-**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Classification/code.py)**
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Code-Sleep-Python/Classification/code.py)**
 
 ----------------------------------------------
 
@@ -129,7 +139,7 @@ In this case study, we will analyze a dataset consisting of an assortment of win
 
 In this case study, we have prepared step-by-step instructions for you on how to prepare plots in Bokeh, a library designed for simple and interactive plotting. We will demonstrate Bokeh by continuing the analysis of Scotch whiskies.You can go through the article - **[here](http://www.geeksforgeeks.org/project-scikit-learn-whisky-clustering/)**
 
-**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/whisky_classification/code.py)**
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Code-Sleep-Python/whisky_classification/code.py)**
 
 ---------------------------------------------
 
@@ -139,7 +149,7 @@ In this case study, we will continue taking a look at patterns of flight for eac
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/BrantaLeucopsisMigration.jpg/300px-BrantaLeucopsisMigration.jpg)
 
-**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Bird_migration/code.py)**
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Code-Sleep-Python/Bird_migration/code.py)**
 
 -------------------------------------------------
 
@@ -149,7 +159,7 @@ Homophily is a network characteristic. Homophily occurs when nodes that share an
 
 ![](https://images.pond5.com/social-media-animation-after-effect-046838541_iconm.jpeg)
 
-**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/social_network/code.py)**
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Code-Sleep-Python/social_network/code.py)**
 
 ----------------------------------------------------
 
@@ -160,7 +170,7 @@ The implementation of Sieve of Eratosthenes is used to find prime numbers.
 
 ![](https://i.pinimg.com/564x/cc/c7/55/ccc7554b4ae9ee9781b752832224f3ef--sieve-of-eratosthenes-prime-factorization.jpg)
 
-**[Code](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Prime/code.py)**
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Code-Sleep-Python/Prime/code.py)**
 
 ----------------------------------------------------
 
@@ -170,7 +180,7 @@ A simple website crawler to check the return code of a website. It returns with 
 
 ![](http://yootheme.com/media/docs/assets/images/warp/error_pages_404.jpg)
 
-**[Code](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/website_status_check/website_status_check.py)**
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Code-Sleep-Python/website_status_check/website_status_check.py)**
 
 
 ----------------------------------------------------
@@ -189,13 +199,13 @@ Encryption is an interesting piece of technology that works by scrambling data s
 
 ### Inception Tic-Tac-Toe
 
-**[Code](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Inception%20TicTacToe/inceptionTTT.py)**
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Code-Sleep-Python/Inception%20TicTacToe/inceptionTTT.py)**
 
 ----------------------------------------------------
 
 ### Sprint
 
-**[Code](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Sprint/sprint.py)**
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Code-Sleep-Python/Sprint/sprint.py)**
 
 ----------------------------------------------------
 
@@ -217,7 +227,7 @@ This program traces out a 4 level Koch curve.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/f/fd/Von_Koch_curve.gif)
 
-**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Koch%20Curve/koch%20curve.py)**
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Code-Sleep-Python/Koch%20Curve/koch%20curve.py)**
 
 ----------------------------------------------------
 
@@ -229,7 +239,7 @@ A superellipse, also known as a Lamé curve after Gabriel Lamé, is a closed cur
 
 ![](https://upload.wikimedia.org/wikipedia/en/2/24/Superellipse_anim.gif)
 
-**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Superellipse/test.py)**
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Code-Sleep-Python/Superellipse/test.py)**
 
 ----------------------------------------------------
 
@@ -239,7 +249,7 @@ A simple program to get the score and match status if India is playing. This inf
 
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgwxUvr7AfngMuzr4a8tc69jexGPoPeSdCTiDZhvlXqgZTH_wxgg)
 
-**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Cricket_Notification/cricket_notification.py)**
+**[CODE](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/Code-Sleep-Python/Cricket_Notification/cricket_notification.py)**
 
 ----------------------------------------------------
 
@@ -251,6 +261,14 @@ A simple program to get the score and match status if India is playing. This inf
 ![](https://raw.githubusercontent.com/prateekiiest/Code-Sleep-Python/master/contribute.jpg)
 
 Its simple. Just fork/clone the repository and see the **Contributing Guidelines** [here](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/CONTRIBUTING.md)
+
+## Saw a BUG !!
+
+![](https://2shopper.files.wordpress.com/2013/08/ace-ventura-jim-carrey-funny.jpg)
+
+Let me know about that. Feel free to open a new issue about any bug or problem you encounter.
+
+
 
 
 ----------------------------------------------------

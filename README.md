@@ -39,7 +39,8 @@ A step-by-step guide to download all the codes from here and test yourself in yo
 
 ```
   git clone https://github.com/prateekiiest/Code-Sleep-Python.git
-
+  
+  # Go to the corresponding directory where it gets cloned
   cd Code-Sleep-python
   cd Code-Sleep-Python  # all the codes are present Here
 

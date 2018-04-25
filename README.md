@@ -56,6 +56,10 @@ This will open a new jupyter notebook in your localhost where you can run all th
 
 ----------------------------------------------------
 
+#### Code of Conduct [See here](https://github.com/prateekiiest/Code-Sleep-Python/blob/master/CODE_OF_CONDUCT.md)
+
+-----------------------------------
+
 ## Projects
 
 * [Tic-Tac-Toe](https://github.com/prateekiiest/Code-Sleep-Python#tic-tac-toe)

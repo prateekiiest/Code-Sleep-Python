@@ -1,4 +1,4 @@
-# Code Sleep Python
+# Code Sleep Python :snake:
 
 -------------------------------------------------
 
@@ -15,6 +15,8 @@
 
 ![](codesleeppython.png)
 
+
+## [Mozilla Global Sprint 2018](https://github.com/prateekiiest/Code-Sleep-Python/wiki/Mozilla-Global-Sprint-Hackathon-2018) :fireworks:
 
 ## About
 

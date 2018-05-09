@@ -1,4 +1,4 @@
-Maintainer: @prateekiiest
+Maintainer: [@prateekiiest](https://github.com/prateekiiest)
 
 ## DESCRIPTION
 

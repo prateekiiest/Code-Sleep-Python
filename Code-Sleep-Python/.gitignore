@@ -1,0 +1,5 @@
+# Ignore all req folders inside the projects
+*/req
+
+# Text-To-Speech
+text-to-speech/speech.mp3

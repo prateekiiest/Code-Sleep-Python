@@ -1,4 +1,5 @@
 import numpy as np
+import random
 def create_board():
     x = np.zeros((3,3))
     return x

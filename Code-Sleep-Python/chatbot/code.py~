@@ -26,7 +26,7 @@ except sr.RequestError as e:
     print("Could not request results from Wit.ai service; {0}".format(e))
 
 # in_speech contains the string of the input audio.
-# It can be processed and actions can be performed based on it.
+#It can be processed and actions can be performed based on it.
 # TODO implement actions based on keywords
 # Suggestions: Utilise wit.ai for proper NLP
 

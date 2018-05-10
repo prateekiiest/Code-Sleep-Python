@@ -1,9 +1,16 @@
 import numpy as np
+import random
+
 def create_board():
     x = np.zeros((3,3))
     return x
 
 board = create_board()
+
+def place(board, player, position):
+    if board[position] == 0:
+        board[position] = player
+        return board
 
 def possibilities(board):
     y = np.where(board == 0 ) #it gives the indices wherever there are zeros in the form of 2 seperate arrays in a tuple. (array([0, 0, 1, 1, 1, 2, 2, 2]), array([1, 2, 0, 1, 2, 0, 1, 2]))  
@@ -52,9 +59,6 @@ def col_win(board,player):
 col_win(board,1)
 
 #diag_win
-# write your code here!
-# write your code here!
-# write your code here!
 
 def diag_win(board,player):
     z = 0

@@ -10,7 +10,6 @@ def create_board():
 
 board = create_board()
 
-
 def place(board, player, position):
     if board[position] == 0:
         board[position] = player
@@ -28,9 +27,6 @@ def possibilities(board):
     # ... and so on. Then using map function convert each of them to tuple.
     # And keep it totally as a list.
     return z
-# selection=possibilities(board)
-# print (y)
-
 
 def random_place(board, player):
     position = random.choice(possibilities(board))
@@ -38,10 +34,6 @@ def random_place(board, player):
     return place(board, player, position)
 
 board = random_place(board, 2)
-
-# row_win
-# write your code here!
-
 
 def row_win(board, player):
     for i in range(3):
@@ -55,7 +47,6 @@ def row_win(board, player):
 
 row_win(board, 1)
 
-
 def col_win(board, player):
     for i in range(3):
         if(player == board[0][i]):
@@ -67,9 +58,6 @@ def col_win(board, player):
             print("False")
 
 col_win(board, 1)
-
-# diag_win
-
 
 def diag_win(board, player):
     z = 0
@@ -84,8 +72,6 @@ def diag_win(board, player):
 diag_win(board, 1)
 
 # Evaluate
-
-
 def evaluate(board):
     winner = 0
     for player in [1, 2]:
@@ -103,8 +89,6 @@ def evaluate(board):
 evaluate(board)
 
 # play_game()
-
-
 def play_game():
     board = create_board()
     if(0 in board):
@@ -113,8 +97,8 @@ def play_game():
         z = evaluate(board)
         player = 2
     return z
-# plot
 
+# plot
 R = 1000
 ty = []
 r = []
@@ -130,7 +114,6 @@ print(c)
 x = [r[j] for j in range(R)]
 plt.hist(x)
 plt.show()
-
 
 # play strategic
 def play_strategic_game():

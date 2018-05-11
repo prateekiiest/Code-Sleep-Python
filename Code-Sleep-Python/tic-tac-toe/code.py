@@ -8,7 +8,9 @@ def create_board():
     x = np.zeros((3, 3))
     return x
 
+
 board = create_board()
+
 
 def place(board, player, position):
     if board[position] == 0:
@@ -33,7 +35,9 @@ def random_place(board, player):
     # print (position)
     return place(board, player, position)
 
+
 board = random_place(board, 2)
+
 
 def row_win(board, player):
     for i in range(3):
@@ -45,7 +49,9 @@ def row_win(board, player):
         else:
             print("False")
 
+            
 row_win(board, 1)
+
 
 def col_win(board, player):
     for i in range(3):
@@ -57,7 +63,9 @@ def col_win(board, player):
         else:
             print("False")
 
+            
 col_win(board, 1)
+
 
 def diag_win(board, player):
     z = 0
@@ -69,7 +77,9 @@ def diag_win(board, player):
     else:
         print("False")
 
+        
 diag_win(board, 1)
+
 
 # Evaluate
 def evaluate(board):
@@ -85,8 +95,9 @@ def evaluate(board):
         winner = -1
     return winner
 
-# add your code here.
+
 evaluate(board)
+
 
 # play_game()
 def play_game():
@@ -129,7 +140,9 @@ def play_strategic_game():
                 break
     return winner
 
+
 play_strategic_game()
+
 
 # plotting play-strategic-game
 # write your code here!

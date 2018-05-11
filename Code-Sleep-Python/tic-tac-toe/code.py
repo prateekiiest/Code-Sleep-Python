@@ -8,7 +8,6 @@ def create_board():
     x = np.zeros((3, 3))
     return x
 
-
 board = create_board()
 
 
@@ -30,11 +29,11 @@ def possibilities(board):
     # And keep it totally as a list.
     return z
 
+
 def random_place(board, player):
     position = random.choice(possibilities(board))
     # print (position)
     return place(board, player, position)
-
 
 board = random_place(board, 2)
 
@@ -48,8 +47,7 @@ def row_win(board, player):
                 print("False")
         else:
             print("False")
-
-            
+           
 row_win(board, 1)
 
 
@@ -62,8 +60,7 @@ def col_win(board, player):
                 print("False")
         else:
             print("False")
-
-            
+           
 col_win(board, 1)
 
 
@@ -76,8 +73,7 @@ def diag_win(board, player):
         print("True")
     else:
         print("False")
-
-        
+     
 diag_win(board, 1)
 
 
@@ -95,12 +91,12 @@ def evaluate(board):
         winner = -1
     return winner
 
-
 evaluate(board)
 
 
 # play_game()
 def play_game():
+    
     board = create_board()
     if(0 in board):
         player = 1
@@ -108,6 +104,7 @@ def play_game():
         z = evaluate(board)
         player = 2
     return z
+
 
 # plot
 R = 1000
@@ -139,7 +136,6 @@ def play_strategic_game():
             if winner != 0:
                 break
     return winner
-
 
 play_strategic_game()
 

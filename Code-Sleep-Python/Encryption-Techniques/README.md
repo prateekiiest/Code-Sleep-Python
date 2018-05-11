@@ -1,4 +1,11 @@
 ### Encryption Techniques
+
+
+Encryption is an interesting piece of technology that works by scrambling data so it is unreadable by unintended parties. The technology comes in many forms, with key size and strength generally being the biggest differences in one variety from the next. This repo has implementations of different encryption techniques. More [here](https://en.wikipedia.org/wiki/Encryption).
+
+![](http://img.bityard.net/blog/aes.png)
+
+
 * [Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher)
 	* [Code](Caesar-Cipher/)
 * [Hill Cipher](https://en.wikipedia.org/wiki/Hill_cipher)

@@ -23,6 +23,7 @@ def die(screen, score):
     pygame.time.wait(2000)
     sys.exit(0)
 
+
 xs = [290, 290, 290, 290, 290]
 ys = [290, 270, 250, 230, 210]
 dirs = 0

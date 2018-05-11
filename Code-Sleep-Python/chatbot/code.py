@@ -1,11 +1,9 @@
 import speech_recognition as sr
-import pyaudio
 import os
 import subprocess
 from gtts import gTTS
 
 r = sr.Recognizer()
-p = pyaudio.PyAudio()
 
 with sr.Microphone() as source:
     r.adjust_for_ambient_noise(source)
@@ -15,7 +13,11 @@ with sr.Microphone() as source:
 
 # recognize speech using Wit.ai
 # export your wit.ai key to your environment before running this program
-WIT_AI_KEY = str(os.getenv("WITAIKEY"))
+WIT_AI_KEY = os.getenv("WITAIKEY")
+if not WIT_AI_KEY:
+    print("API key not available")
+    exit()
+
 in_speech = ""
 try:
     in_speech = r.recognize_wit(audio, key=WIT_AI_KEY)

@@ -5,6 +5,12 @@ Thanks for all your contributions :heart: :octocat:
 [prateekiiest](https://github.com/prateekiiest) : CodeOwner
 
 
+#### Mozilla Global Sprint Hackathon 2018
+
+| Github username      | Pull Request           | Status  |
+| ------------- |:-------------:| -----:|
+
+
 #### Hacktoberfest
 
 | Github username      | Pull Request           | Status  |

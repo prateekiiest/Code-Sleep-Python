@@ -5,13 +5,11 @@ def segmented_sieve(range_from, range_to):
     """
     Segmented sieve helps in providing a efficient way in terms of
     memory to find the prime numbers in a given range.
-
     Space complexity: O(l)
     Time complexity: O(l * log(logl))
-
     l =  range_to - range_from
     """
-
+    print range_from, range_to
     # if the range starts from 1, incerement it.
     if range_from == 1:
         range_from += 1
@@ -38,13 +36,11 @@ def segmented_sieve(range_from, range_to):
 def sieve_eratosthenes(range_to):
     """
     A Very efficient way to generate all prime numbers upto a number.
-
     Space complexity: O(n)
     Time complexity: O(n * log(logn))
-
     n = the number upto which prime numbers are to be generated.
     """
-
+    range_to=int(range_to)
     # creating a boolean list first
     prime = [True for i in range(range_to + 1)]
     p = 2
@@ -66,10 +62,8 @@ def sieve_eratosthenes(range_to):
 def is_prime(num):
     """
         Returns true is the number is prime.
-
         To check if a number is prime, we need to check
         all its divisors upto only sqrt(number).
-
         Reference: https://stackoverflow.com/a/5811176/7213370
     """
 
@@ -90,7 +84,6 @@ def is_prime(num):
 def prime(range_from, range_to):
     """
     Brute Force. O(l * sqrt(num)) [l = range_to - range_from]
-
     Returns list of primes in the given range, by checking
     if the number is a prime or not.
     """
@@ -102,6 +95,6 @@ if __name__ == "__main__":
     range_from = int(input("From: "))
     range_to = int(input("To: "))
 
-    print("Brute force:", prime(range_from, range_to), end="\n\n")
-    print("Sieve of Eratosthenes:", sieve_eratosthenes(range_to), end="\n\n")
-    print("Segmented Sieve:", segmented_sieve(range_from, range_to))
+    print("Brute force: "+str(prime(range_from, range_to))+ "\n\n")
+    print("Sieve of Eratosthenes:"+str(sieve_eratosthenes(range_to)) +"\n\n")
+    print("Segmented Sieve:"+str(segmented_sieve(range_from, range_to)))

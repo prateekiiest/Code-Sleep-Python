@@ -1,6 +1,13 @@
 import tkinter
 
-'''		#list of possible win combinations in the form of button numbers
+
+class pvp_app():
+
+    def __init__(self):
+        tkinter.Frame.__init__(self)
+
+    '''
+    #list of possible win combinations in the form of button numbers
         WinCombo=[[1,2,3], [4,5,6], [7,8,9],    #rows   
                   [1,4,7], [2,5,8], [3,6,9],    #columns
                   [1,5,9], [3,5,7]]             #diagonals
@@ -33,12 +40,7 @@ import tkinter
                     for k in range(1,10):
                         self.button_lst[k].configure(state=DISABLED)
                     break
-'''
-
-
-class pvp_app():
-    def __init__(self):
-        tkinter.Frame.__init__(self)
+    '''
 
     def PlayerGame(self):
         self.pvp_button.grid_forget()
@@ -80,7 +82,8 @@ class pvp_app():
                                                        bg="red",
                                                        state=tkinter.DISABLED,
                                                        command=lambda x=i,
-                                                                      y=j: self.handle_button(
+                                                                      y=j:
+                                                       self.handle_button(
                                                            x, y), height=1,
                                                        width=2,
                                                        font=("Purisa", 18))
@@ -234,7 +237,8 @@ class pvp_app():
                         break
         if self.GameDone == tkinter.TRUE:
             self.message = tkinter.messagebox.askquestion(" ",
-                                                          "Do you want to play the "
+                                                          "Do you want to "
+                                                          "play the "
                                                           "game again?")
             if self.message == "no":
                 self.QuitGame()
@@ -304,7 +308,8 @@ class MainGUI(tkinter.Frame, pvp_app):
 
     def ShowHomepage(self):
         self.homepage_label = tkinter.Label(self,
-                                            text="WELCOME TO THE WORLD OF TIC-TAC-TOE",
+                                            text="WELCOME TO THE WORLD OF "
+                                                 "TIC-TAC-TOE",
                                             font=("courier", 15), fg="red",
                                             bg="yellow")
         self.homepage_label.grid(row=0, column=1, padx=20, pady=25)

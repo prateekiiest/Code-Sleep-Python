@@ -5,6 +5,13 @@ Thanks for all your contributions :heart: :octocat:
 [prateekiiest](https://github.com/prateekiiest) : CodeOwner
 
 
+#### Mozilla Global Sprint Hackathon 2018
+
+| Github username      | Pull Request           | Status  |
+| ------------- |:-------------:| -----:|
+| [siddas27](https://github.com/siddas27)   | [Logistic regression model](https://github.com/prateekiiest/Code-Sleep-Python/pull/126) | Merged |
+
+
 #### Hacktoberfest
 
 | Github username      | Pull Request           | Status  |

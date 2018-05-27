@@ -38,37 +38,59 @@ def winning_move(baord, piece):
     # Check hozizontal locations for win
     for c in range(NB_COL-3):
         for r in range(NB_ROW):
-            if board[r][c] == piece and board[r][c+1] == piece and board[r][c+2] == piece and board[r][c+3] == piece:
+            if (
+                board[r][c] == piece and board[r][c+1] == piece and
+                board[r][c+2] == piece and board[r][c+3] == piece
+               ):
                 return True
     # Check verticle locations for win
     for c in range(NB_COL):
         for r in range(NB_ROW-3):
-            if board[r][c] == piece and board[r+1][c] == piece and board[r+2][c] == piece and board[r+3][c] == piece:
+            if (
+                board[r][c] == piece and board[r+1][c] == piece and
+                board[r+2][c] == piece and board[r+3][c] == piece
+              ):
                 return True
     # check for positively sloped diags
     for c in range(NB_COL-3):
         for r in range(NB_ROW-3):
-            if board[r][c] == piece and board[r+1][c+1] == piece and board[r+2][c+2] == piece and board[r+3][c+3] == piece:
+            if(
+                board[r][c] == piece and board[r+1][c+1] == piece and
+                board[r+2][c+2] == piece and board[r+3][c+3] == piece
+               ):
                 return True
     # check for negitively sloped diags
     for c in range(NB_COL-3):
-        for r in range(3,NB_ROW):
-            if board[r][c] == piece and board[r-1][c+1] == piece and board[r-2][c+2] == piece and board[r-3][c+3] == piece:
+        for r in range(3, NB_ROW):
+            if(
+                board[r][c] == piece and board[r-1][c+1] == piece and
+                board[r-2][c+2] == piece and board[r-3][c+3] == piece
+              ):
                 return True
 
 
 def draw_board(board):
     for c in range(NB_COL):
         for r in range(NB_ROW):
-            pygame.draw.rect(screen, BLUE, (c*SQUARESIZE, r*SQUARESIZE+SQUARESIZE, SQUARESIZE, SQUARESIZE))
-            pygame.draw.circle(screen, BLACK, (int(c*SQUARESIZE+SQUARESIZE/2), int(r*SQUARESIZE+1.5*SQUARESIZE)), RADIUS)
+            pygame.draw.rect(screen, BLUE,
+                             (c*SQUARESIZE, r*SQUARESIZE+SQUARESIZE,
+                              SQUARESIZE, SQUARESIZE))
+            pygame.draw.circle(screen, BLACK,
+                               (int(c*SQUARESIZE+SQUARESIZE/2),
+                                int(r*SQUARESIZE+1.5*SQUARESIZE)), RADIUS)
 
     for c in range(NB_COL):
         for r in range(NB_ROW):
             if board[r][c] == 1:
-                pygame.draw.circle(screen, RED, (int(c*SQUARESIZE+SQUARESIZE/2), height-int(r*SQUARESIZE+SQUARESIZE/2)), RADIUS)
+                pygame.draw.circle(screen, RED,
+                                   (int(c*SQUARESIZE+SQUARESIZE/2),
+                                    height-int(r*SQUARESIZE+SQUARESIZE/2)),
+                                   RADIUS)
             elif board[r][c] == 2:
-               pygame.draw.circle(screen, YELLOW, (int(c*SQUARESIZE+SQUARESIZE/2), height-int(r*SQUARESIZE+SQUARESIZE/2)), RADIUS)
+                pygame.draw.circle(screen, YELLOW,
+                                   (int(c*SQUARESIZE+SQUARESIZE/2),
+                                    height-int(r*SQUARESIZE+SQUARESIZE/2)),
+                                   RADIUS)
         pygame.display.update()
 
 
@@ -98,9 +120,11 @@ while not game_over:
             pygame.draw.rect(screen, BLACK, (0, 0, width, SQUARESIZE))
             pos_x = event.pos[0]
             if turn == 0:
-                pygame.draw.circle(screen, RED, (pos_x, int(SQUARESIZE/2)), RADIUS)
+                pygame.draw.circle(screen, RED,
+                                   (pos_x, int(SQUARESIZE/2)), RADIUS)
             else:
-                pygame.draw.circle(screen, YELLOW, (pos_x, int(SQUARESIZE/2)), RADIUS)
+                pygame.draw.circle(screen, YELLOW,
+                                   (pos_x, int(SQUARESIZE/2)), RADIUS)
         pygame.display.update()
         if event.type == pygame.MOUSEBUTTONDOWN:
             pygame.draw.rect(screen, BLACK, (0, 0, width, SQUARESIZE))
@@ -132,4 +156,3 @@ while not game_over:
 
             if game_over:
                 pygame.time.wait(3000)
-

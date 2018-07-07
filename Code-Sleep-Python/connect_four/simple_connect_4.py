@@ -1,8 +1,4 @@
 import numpy as np
-import random
-import time
-import matplotlib.pyplot as plt
-
 # Creates grid to be filled
 
 NB_COL = 7

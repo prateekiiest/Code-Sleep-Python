@@ -36,6 +36,12 @@ The repository is still under development. Only the source code has been uploade
 
 New to Python? Take a look [here](https://github.com/prateekiiest/Code-Sleep-Python#getting-started-with-python).
 
+
+## HACKTOBERFEST 2018
+
+![](https://raw.githubusercontent.com/prateekiiest/Code-Sleep-Python/master/Screenshot%20(190).png)
+
+
 #### Downloading and Running
 
 A step-by-step guide to download all the codes from here and test yourself in your local machine.

@@ -25,9 +25,9 @@ religion1 = {df1.pid[i]: df1.religion[i] for i in range(len(df1.pid))}
 # Continue for df2 as well.
 
 j = 203
-sex2 = {df2.pid[j]: df2.resp_gend[j] for j in range(203, 406) }
-caste2 = {df2.pid[j]: df2.caste[j] for j in range(203, 406) }
-religion2 = {df2.pid[j]: df2.religion[j] for j in range(203, 406) }
+sex2 = {df2.pid[j]: df2.resp_gend[j] for j in range(203, 406)}
+caste2 = {df2.pid[j]: df2.caste[j] for j in range(203, 406)}
+religion2 = {df2.pid[j]: df2.religion[j] for j in range(203, 406)}
 
 
 def chance_homophily(chars):
@@ -35,8 +35,10 @@ def chance_homophily(chars):
     z = set(chars.values())
     su = 0
     for c in z:
-        su = su + pow((sum(x == c for x in chars.values())/len(chars) * 1.0), 2)
+        su = su + pow((sum(x == c for x in chars.values())/len(chars) * 1.0),
+                            2)
     return su
+
 
 favorite_colors = {
     "ankit":  "red",

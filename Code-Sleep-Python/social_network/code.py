@@ -1,7 +1,6 @@
 import pandas as pd
 from os import getcwd
 import argparse
-from collections import Counter
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-d', '--data_filepath', help="""Select the directory where

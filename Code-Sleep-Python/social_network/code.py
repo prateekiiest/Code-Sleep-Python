@@ -18,15 +18,30 @@ df2 = df[df.village == 2]
 df1.head()
 
 
-sex1 = {df1.pid[i]: df1.resp_gend[i] for i in range(len(df1.pid))}
-caste1 = {df1.pid[i]: df1.caste[i] for i in range(len(df1.pid))}
-religion1 = {df1.pid[i]: df1.religion[i] for i in range(len(df1.pid))}
+def get_params(dfx, elem, items_range):
+    return {dfx.pid[i]: elem[i] for i in items_range}
+
+# Original
+#sex1 = {df1.pid[i]: df1.resp_gend[i] for i in range(len(df1.pid))}
+#caste1 = {df1.pid[i]: df1.caste[i] for i in range(len(df1.pid))}
+#religion1 = {df1.pid[i]: df1.religion[i] for i in range(len(df1.pid))}
+
+sex1 = get_params(df1, df1.resp_gend, range(len(df1.pid)))
+caste1 = get_params(df1,  df1.caste, range(len(df1.pid)))
+religion1 = (df1, df1.religion, range(len(df1.pid)))
+
 # Continue for df2 as well.
 
 j = 203
-sex2 = {df2.pid[j]: df2.resp_gend[j] for j in range(203, 406)}
-caste2 = {df2.pid[j]: df2.caste[j] for j in range(203, 406)}
-religion2 = {df2.pid[j]: df2.religion[j] for j in range(203, 406)}
+sex2 = get_params(df2, df2.resp_gend, range(203, 406))
+caste2 = get_params(df2,  df2.caste, range(203, 406))
+religion2 = (df2, df2.religion, range(203, 406))
+
+
+#Original
+#sex2 = {df2.pid[j]: df2.resp_gend[j] for j in range(203, 406)}
+#caste2 = {df2.pid[j]: df2.caste[j] for j in range(203, 406)}
+#religion2 = {df2.pid[j]: df2.religion[j] for j in range(203, 406)}
 
 
 def chance_homophily(chars):

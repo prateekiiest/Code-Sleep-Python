@@ -10,7 +10,7 @@ parser.add_argument('-d', '--data_filepath', help="""Select the directory where
 args = parser.parse_args()
 data_filepath = args.data_filepath
 
-df  = pd.read_stata(data_filepath + "individual_characteristics.dta")
+df = pd.read_stata(data_filepath + "individual_characteristics.dta")
 df1 = df[df.village == 1]
 df2 = df[df.village == 2]
 
@@ -18,19 +18,21 @@ df2 = df[df.village == 2]
 df1.head()
 
 
-sex1      = {df1.pid[i]: df1.resp_gend[i] for i in range(len(df1.pid))}
-caste1    = {df1.pid[i]: df1.caste[i] for i in range(len(df1.pid))}
+sex1 = {df1.pid[i]: df1.resp_gend[i] for i in range(len(df1.pid))}
+caste1 = {df1.pid[i]: df1.caste[i] for i in range(len(df1.pid))}
 religion1 = {df1.pid[i]: df1.religion[i] for i in range(len(df1.pid))}
 # Continue for df2 as well.
 
 j = 203
-sex2      = {df2.pid[j]: df2.resp_gend[j] for j in range(203,406)}
-caste2    = {df2.pid[j]: df2.caste[j] for j in range(203,406) }
-religion2 = {df2.pid[j]: df2.religion[j] for j in range(203,406)}
+sex2 = {df2.pid[j]: df2.resp_gend[j] for j in range(203, 406) }
+caste2 = {df2.pid[j]: df2.caste[j] for j in range(203, 406) }
+religion2 = {df2.pid[j]: df2.religion[j] for j in range(203, 406) }
 
 
 
 from collections import Counter
+
+
 def chance_homophily(chars):
     # Enter code here!
     z = set(chars.values())
@@ -57,7 +59,6 @@ print("Village 1 chance of same religion:", chance_homophily(religion1))
 print("Village 2 chance of same sex:", chance_homophily(sex2))
 print("Village 2 chance of same religion:", chance_homophily(religion2))
 print("Village 2 chance of same caste:", chance_homophily(caste2))
-
 
 
 def homophily(G, chars, IDs):
@@ -90,4 +91,3 @@ print("Village 2 observed proportion of same caste:",
       homophily(G2, caste2, pid2))
 print("Village 2 observed proportion of same religion:",
       homophily(G1, religion2, pid2))
-

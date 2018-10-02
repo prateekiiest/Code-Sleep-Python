@@ -62,6 +62,30 @@ print("Village 2 chance of same religion:", chance_homophily(religion2))
 print("Village 2 chance of same caste:", chance_homophily(caste2))
 
 
+def checks_for_homophility(n1, n2, G, chars, IDs):
+
+    num_ties = 0;
+    num_same_ties = 0;
+
+    if n1 <= n2:
+        return num_ties, num_same_ties
+
+    # do not double-count edges!
+    if (IDs[n1] in chars and IDs[n2] in chars) == False:
+        return num_ties, num_same_ties
+
+    if G.has_edge(n1, n2) == False:
+        return num_ties, num_same_ties
+
+    # Should `num_ties` be incremented?
+    # What about `num_same_ties`?
+    num_ties = 1
+    if chars[IDs[n1]] == chars[IDs[n2]]:
+        num_same_ties = 1
+
+    return num_ties, num_same_ties
+
+
 def homophily(G, chars, IDs):
     """
     Given a network G, a dict of characteristics chars for node IDs,
@@ -72,21 +96,11 @@ def homophily(G, chars, IDs):
     for n1 in G.nodes():
         for n2 in G.nodes():
 
-            if n1 <= n2:
-                continue
+            ties, same_ties = check_for_homophily(n1, n2, G, chars, IDs)
 
-            # do not double-count edges!
-            if (IDs[n1] in chars and IDs[n2] in chars) == False:
-                continue
+            num_ties += ties
+            num_same_ties += same_ties
 
-            if G.has_edge(n1, n2) == False:
-                continue
-
-            # Should `num_ties` be incremented?
-            # What about `num_same_ties`?
-            num_ties += 1
-            if chars[IDs[n1]] == chars[IDs[n2]]:
-                num_same_ties += 1
 
     return (num_same_ties / num_ties)
 

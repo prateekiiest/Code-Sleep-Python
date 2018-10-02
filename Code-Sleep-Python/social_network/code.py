@@ -3,7 +3,10 @@ from os import getcwd
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-d', '--data_filepath', help='Select the directory where is stored the file. the default is the current directory.', default=getcwd())
+parser.add_argument('-d', '--data_filepath', help="""Select the directory where
+                    is stored the file. Default is the current directory.""",
+                    default=getcwd())
+
 args = parser.parse_args()
 data_filepath = args.data_filepath
 
@@ -15,15 +18,15 @@ df2 = df[df.village == 2]
 df1.head()
 
 
-sex1      = {df1.pid[i] : df1.resp_gend[i] for i in range(len(df1.pid))}
-caste1    = {df1.pid[i] : df1.caste[i] for i in range(len(df1.pid))}
-religion1 = {df1.pid[i] : df1.religion[i] for i in range(len(df1.pid))}
+sex1      = {df1.pid[i]: df1.resp_gend[i] for i in range(len(df1.pid))}
+caste1    = {df1.pid[i]: df1.caste[i] for i in range(len(df1.pid))}
+religion1 = {df1.pid[i]: df1.religion[i] for i in range(len(df1.pid))}
 # Continue for df2 as well.
 
 j = 203
-sex2      = {df2.pid[j] : df2.resp_gend[j] for j in range(203,406)}
-caste2    = {df2.pid[j] : df2.caste[j] for j in range(203,406) }
-religion2 = {df2.pid[j] : df2.religion[j] for j in range(203,406)}
+sex2      = {df2.pid[j]: df2.resp_gend[j] for j in range(203,406)}
+caste2    = {df2.pid[j]: df2.caste[j] for j in range(203,406) }
+religion2 = {df2.pid[j]: df2.religion[j] for j in range(203,406)}
 
 
 
@@ -33,7 +36,7 @@ def chance_homophily(chars):
     z = set(chars.values())
     su = 0
     for c in z:
-        su = su + pow((sum(x == c for x in chars.values())/len(chars) * 1.0),2)
+        su = su + pow((sum(x == c for x in chars.values())/len(chars) * 1.0), 2)
     return su
 
 favorite_colors = {
@@ -69,21 +72,22 @@ def homophily(G, chars, IDs):
             if n1 > n2:   # do not double-count edges!
                 if IDs[n1] in chars and IDs[n2] in chars:
                     if G.has_edge(n1, n2):
-                        # Should `num_ties` be incremented?  What about `num_same_ties`?
+                        # Should `num_ties` be incremented?
+                        # What about `num_same_ties`?
                         num_ties += 1
                         if chars[IDs[n1]] == chars[IDs[n2]]:
                             return (num_same_ties / num_ties)
 
 
 print("Village 1 observed proportion of same sex:", homophily(G1, sex1, pid1))
-print("Village 1 observed proportion of same caste:", homophily(G1, caste1, pid1))
-print("Village 1 observed proportion of same religion:", homophily(G1, religion1, pid1))
+print("Village 1 observed proportion of same caste:",
+      homophily(G1, caste1, pid1))
+print("Village 1 observed proportion of same religion:",
+      homophily(G1, religion1, pid1))
 # Enter your code here!
 print("Village 2 observed proportion of same sex:", homophily(G2, sex2, pid2))
-print("Village 2 observed proportion of same caste:", homophily(G2, caste2, pid2))
-print("Village 2 observed proportion of same religion:", homophily(G1, religion2, pid2))
-
-
-
-
+print("Village 2 observed proportion of same caste:",
+      homophily(G2, caste2, pid2))
+print("Village 2 observed proportion of same religion:",
+      homophily(G1, religion2, pid2))
 

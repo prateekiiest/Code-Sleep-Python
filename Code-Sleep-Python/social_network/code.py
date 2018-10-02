@@ -1,4 +1,12 @@
 import pandas as pd
+from os import getcwd
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-d', '--data_filepath', help='Select the directory where is stored the file. the default is the current directory.', default=getcwd())
+args = parser.parse_args()
+data_filepath = args.data_filepath
+
 df  = pd.read_stata(data_filepath + "individual_characteristics.dta")
 df1 = df[df.village == 1]
 df2 = df[df.village == 2]
@@ -25,9 +33,7 @@ def chance_homophily(chars):
     z = set(chars.values())
     su = 0
     for c in z:
-        
         su = su + pow((sum(x == c for x in chars.values())/len(chars) * 1.0),2)
-    
     return su
 
 favorite_colors = {
@@ -40,7 +46,6 @@ color_homophily = chance_homophily(favorite_colors)
 print(color_homophily)
 
 
-    
 print("Village 1 chance of same sex:", chance_homophily(sex1))
 # Enter your code here.
 print("Village 1 chance of same caste:", chance_homophily(caste1))
@@ -67,11 +72,9 @@ def homophily(G, chars, IDs):
                         # Should `num_ties` be incremented?  What about `num_same_ties`?
                         num_ties += 1
                         if chars[IDs[n1]] == chars[IDs[n2]]:
+                            return (num_same_ties / num_ties)
 
 
-    return (num_same_ties / num_ties)
-    
-    
 print("Village 1 observed proportion of same sex:", homophily(G1, sex1, pid1))
 print("Village 1 observed proportion of same caste:", homophily(G1, caste1, pid1))
 print("Village 1 observed proportion of same religion:", homophily(G1, religion1, pid1))

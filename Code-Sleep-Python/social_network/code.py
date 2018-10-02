@@ -62,10 +62,12 @@ print("Village 2 chance of same religion:", chance_homophily(religion2))
 print("Village 2 chance of same caste:", chance_homophily(caste2))
 
 
-def checks_for_homophility(n1, n2, G, chars, IDs):
+def checks_for_homophility(nodes, G, chars, IDs):
 
     num_ties = 0;
     num_same_ties = 0;
+    n1 = nodes[0]
+    n2 = nodes[1]
 
     if n1 <= n2:
         return num_ties, num_same_ties
@@ -96,7 +98,8 @@ def homophily(G, chars, IDs):
     for n1 in G.nodes():
         for n2 in G.nodes():
 
-            ties, same_ties = check_for_homophily(n1, n2, G, chars, IDs)
+            nodes = [n1, n2]
+            ties, same_ties = check_for_homophily(nodes, G, chars, IDs)
 
             num_ties += ties
             num_same_ties += same_ties

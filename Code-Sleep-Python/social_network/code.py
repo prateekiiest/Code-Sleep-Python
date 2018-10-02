@@ -71,14 +71,22 @@ def homophily(G, chars, IDs):
     num_same_ties, num_ties = 0, 0
     for n1 in G.nodes():
         for n2 in G.nodes():
-            if n1 > n2:   # do not double-count edges!
-                if IDs[n1] in chars and IDs[n2] in chars:
-                    if G.has_edge(n1, n2):
-                        # Should `num_ties` be incremented?
-                        # What about `num_same_ties`?
-                        num_ties += 1
-                        if chars[IDs[n1]] == chars[IDs[n2]]:
-                            return (num_same_ties / num_ties)
+
+            if n1 <= n2:
+                continue
+
+            # do not double-count edges!
+            if IDs[n1] in chars and IDs[n2] in chars:
+                if G.has_edge(n1, n2) == False:
+                    continue
+
+                # Should `num_ties` be incremented?
+                # What about `num_same_ties`?
+                num_ties += 1
+                if chars[IDs[n1]] == chars[IDs[n2]]:
+                    num_same_ties += 1
+
+    return (num_same_ties / num_ties)
 
 
 print("Village 1 observed proportion of same sex:", homophily(G1, sex1, pid1))

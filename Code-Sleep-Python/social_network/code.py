@@ -35,8 +35,7 @@ def chance_homophily(chars):
     z = set(chars.values())
     su = 0
     for c in z:
-        su = su + pow((sum(x == c for x in chars.values())/len(chars) * 1.0),
-                            2)
+        su = su + pow((sum(x == c for x in chars.values())/len(chars) * 1), 2)
     return su
 
 

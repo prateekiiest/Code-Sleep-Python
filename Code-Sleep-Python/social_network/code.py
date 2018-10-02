@@ -1,6 +1,7 @@
 import pandas as pd
 from os import getcwd
 import argparse
+from collections import Counter
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-d', '--data_filepath', help="""Select the directory where
@@ -27,10 +28,6 @@ j = 203
 sex2 = {df2.pid[j]: df2.resp_gend[j] for j in range(203, 406) }
 caste2 = {df2.pid[j]: df2.caste[j] for j in range(203, 406) }
 religion2 = {df2.pid[j]: df2.religion[j] for j in range(203, 406) }
-
-
-
-from collections import Counter
 
 
 def chance_homophily(chars):

@@ -76,15 +76,17 @@ def homophily(G, chars, IDs):
                 continue
 
             # do not double-count edges!
-            if IDs[n1] in chars and IDs[n2] in chars:
-                if G.has_edge(n1, n2) == False:
-                    continue
+            if (IDs[n1] in chars and IDs[n2] in chars) == False:
+                continue
 
-                # Should `num_ties` be incremented?
-                # What about `num_same_ties`?
-                num_ties += 1
-                if chars[IDs[n1]] == chars[IDs[n2]]:
-                    num_same_ties += 1
+            if G.has_edge(n1, n2) == False:
+                continue
+
+            # Should `num_ties` be incremented?
+            # What about `num_same_ties`?
+            num_ties += 1
+            if chars[IDs[n1]] == chars[IDs[n2]]:
+                num_same_ties += 1
 
     return (num_same_ties / num_ties)
 

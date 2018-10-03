@@ -49,7 +49,7 @@ class TicTacToe(object):
         moves = []
         for index, element in enumerate(self.board):
             if element is 0:
-                moves.append(index)  
+                moves.append(index)
         return moves
 
     def available_combos(self, player):

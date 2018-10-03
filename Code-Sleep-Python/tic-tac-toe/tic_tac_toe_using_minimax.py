@@ -46,7 +46,11 @@ class TicTacToe(object):
         '''
         To check what all possible moves are remaining for a player
         '''
-        return [index for index, element in enumerate(self.board) if element is 0]
+        moves = []
+        for index, element in enumerate(self.board):
+            if element is 0:
+                moves.append(index)  
+        return moves
 
     def available_combos(self, player):
         '''
@@ -87,7 +91,11 @@ class TicTacToe(object):
 
         :param player: 'X' or 'O'
         '''
-        return [index for index, element in enumerate(self.board) if element == player]
+        places = []
+        for index, element in enumerate(self.board):
+            if element == player:
+                places.append(index)
+        return places
 
     def make_move(self, position, player):
         self.board[position] = player
@@ -175,7 +183,7 @@ if __name__ == "__main__":
         board.print_board()
     if board.winner() != 0:
         if board.winner() == 'X':
-            print ("Congratulations you win!")
+            print("Congratulations you win!")
         else:
             print('Computer Wins!')
     else:

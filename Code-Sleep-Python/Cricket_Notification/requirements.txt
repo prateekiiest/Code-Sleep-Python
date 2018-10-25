@@ -1,0 +1,2 @@
+notify2
+dbus-python

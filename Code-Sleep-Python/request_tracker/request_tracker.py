@@ -248,6 +248,7 @@ def sigint(signal, frame):
 
     sys.exit(0)
 
+    
 signal.signal(signal.SIGINT, sigint)
 
 worker = RequestTracker('http://facebook.com', 60)
@@ -260,4 +261,3 @@ worker.setCSVFilename('decisions.csv')
 worker.enableCSV()
 
 worker.start()
-

@@ -10,5 +10,4 @@ run `python XXXX.py` in the command line to run the script. Make sure you have P
 Screenshots:
 ========================
 
-
-![alt text](https://github.com/humayunkakar7/Code-Sleep-Python/Code-Sleep-Python/request_tracker/Screenshot.png "Example")
+![Facebook example](https://github.com/humayunkakar7/Code-Sleep-Python/blob/master/Code-Sleep-Python/request_tracker/Screenshot.png "Example")

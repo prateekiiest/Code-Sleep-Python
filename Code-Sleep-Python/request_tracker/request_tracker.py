@@ -248,7 +248,7 @@ def sigint(signal, frame):
 
     sys.exit(0)
 
-    
+
 signal.signal(signal.SIGINT, sigint)
 
 worker = RequestTracker('http://facebook.com', 60)

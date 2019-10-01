@@ -65,12 +65,12 @@ def sieve_eratosthenes(range_to):
 
 def is_prime(num):
     """
-        Returns true is the number is prime.
+    Returns true is the number is prime.
 
-        To check if a number is prime, we need to check
-        all its divisors upto only sqrt(number).
+    To check if a number is prime, we need to check
+    all its divisors upto only sqrt(number).
 
-        Reference: https://stackoverflow.com/a/5811176/7213370
+    Reference: https://stackoverflow.com/a/5811176/7213370
     """
 
     # corner case. 1 is not a prime

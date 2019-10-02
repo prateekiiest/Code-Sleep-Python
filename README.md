@@ -28,7 +28,7 @@ This project is for all the **Python lovers** out there.
 #### Description
 This repository contains a curated list of some of the awesome small projects made in Python that you can code away this summer.
 
-It includes analysis of different Python modules, a deep analysis of the Python statistics modules and dataframes like Pandas.
+It includes analysis of different Python modules, a deep analysis of the Python statistics modules, and dataframes like Pandas.
 
 It has some projects on classification, correlation and regression which are the fundamental building blocks of Machine Learning and Neural Networks.
 

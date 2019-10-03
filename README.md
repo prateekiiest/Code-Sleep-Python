@@ -124,7 +124,7 @@ New to Python? No problem! Take a look at the following resources:
 - [How to Think Like a Computer Scientist](http://openbookproject.net/thinkcs/python/english3e/)(book)
 - [Byte of Python](https://python.swaroopch.com/)(book)
 - [Pycharm EDU](https://www.jetbrains.com/pycharm-edu/) - A helpful program that teaches Python. It includes many lessons on basic Python. It also has tests, checks, and hints to help you through each programming activity!
-
+- [Build applications in Python the anti-textbook](https://github.com/thewhitetulip/build-app-with-python-antitextbook/) - Teaches Python through example and Youtube Screencasts.
 
 --------------------------------------
 

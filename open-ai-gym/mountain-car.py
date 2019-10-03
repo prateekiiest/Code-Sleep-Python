@@ -1,6 +1,3 @@
-'''The mountain car problem, although fairly simple, is commonly applied because it requires a reinforcement learning agent to learn
-on two continuous variables: position and velocity. For any given state (position and velocity) of the car, the agent is given the
-possibility of driving left, driving right, or not using the engine at all'''
 # https://en.wikipedia.org/wiki/Mountain_car_problem
 # environment: https://github.com/openai/gym/wiki/MountainCar-v0
 # 3 actions: 0:push_left, 1:no_push, 2:push_right
@@ -13,17 +10,15 @@ import gym
 from gym import wrappers
 
 # initializations
-number_states = 40 # number_of_states
-max_iteration = 5000 # max_iteration
-initial_learning_rate = 1.0 # initial learning rate
+number_states = 40  # number_of_states
+max_iteration = 5000  # max_iteration
+initial_learning_rate = 1.0  # initial learning rate
 min_learning_rate = 0.005   # minimum learning rate
-max_step = 10000 # max_step
+max_step = 10000  # max_step
 
 # parameters for q learning
 epsilon = 0.05
 gamma = 1.0
-
-
 
 
 def observation_to_state(environment, observation):
@@ -33,21 +28,21 @@ def observation_to_state(environment, observation):
     environment_dx = (environment_high - environment_low) / number_states
 
     # observation[0]:position ;  observation[1]: volecity
-    p = int((observation[0] - environment_low[0])/environment_dx[0])
-    v = int((observation[1] - environment_low[1])/environment_dx[1])
+    p = int((observation[0] - environment_low[0]) / environment_dx[0])
+    v = int((observation[1] - environment_low[1]) / environment_dx[1])
     # p:position, v:volecity
     return p, v
 
 
 def episode_simulation(environment, policy=None, render=False):
-    observation= environment.reset()
+    observation = environment.reset()
     total_reward = 0
     step_count = 0
     for _ in range(max_step):
         if policy is None:
             action = environment.action_space.sample()
         else:
-            p,v = observation_to_state(environment, observation)
+            p, v = observation_to_state(environment, observation)
             action = policy[p][v]
         if render:
             environment.render()
@@ -68,7 +63,7 @@ if __name__ == '__main__':
     environment = gym.make(environment_name)
     environment.seed(0)
     np.random.seed(0)
-    
+
     # create qTable with zeros
     # 3 actions: 0:push_left, 1:no_push, 2:push_right
     q_table = np.zeros((number_states, number_states, 3))
@@ -78,7 +73,8 @@ if __name__ == '__main__':
         observation = environment.reset()
         total_reward = 0
         # eta: learning rate is decreased at each step
-        eta = max(min_learning_rate, initial_learning_rate * (0.85 ** (i//100)))
+        eta = max(min_learning_rate,
+                  initial_learning_rate * (0.85 ** (i // 100)))
         # each episode is max_step long
         for j in range(max_step):
             p, v = observation_to_state(environment, observation)
@@ -88,12 +84,14 @@ if __name__ == '__main__':
                 action = np.random.choice(environment.action_space.n)
             else:
                 logits = q_table[p][v]
-                # calculate the exponential of all elements in the input array.
+                # calculate the exponential of all elements in the input
+                # array.
                 logits_exp = np.exp(logits)
                 # calculate the probabilities
                 probabilities = logits_exp / np.sum(logits_exp)
                 # get random action
-                action = np.random.choice(environment.action_space.n, p=probabilities)
+                action = np.random.choice(
+                    environment.action_space.n, p=probabilities)
                 # get observation, reward and done after each step
                 observation, reward, done, _ = environment.step(action)
 
@@ -102,16 +100,24 @@ if __name__ == '__main__':
             # p:position, v:volecity
             p_, v_ = observation_to_state(environment, observation)
             # gamma: discount factor
-            # Bellmann eq: Q(s,a)=reward + gamma* max(Q(s_,a_))  ::: Q_target = reward+gamma*max(Qs_prime)
-            q_table[p][v][action] = q_table[p][v][action] + eta * (reward + gamma *  np.max(q_table[p_][v_]) - q_table[p][v][action])
+            # Bellmann eq: Q(s,a)=reward + gamma* max(Q(s_,a_))  ::: Q_target =
+            # reward+gamma*max(Qs_prime)
+            max_in_table = np.max(q_table[p_][v_])
+            q_table[p][v][action] = q_table[p][v][action] + eta * \
+                (reward + gamma * max_in_table - q_table[p][v][action])
             if done:
                 break
         if i % 50 == 0:
-            print('Iteration No: %d -- Total Reward : %d.' %(i+1, total_reward))
+            print(
+                'Iteration No: %d -- Total Reward : %d.' %
+                (i + 1, total_reward))
 
     solution_policy = np.argmax(q_table, axis=2)
-    solution_policy_scores = [episode_simulation(environment, solution_policy, False) for _ in range(100)]
+    solution_policy_scores = [
+        episode_simulation(
+            environment,
+            solution_policy,
+            False) for _ in range(100)]
     print("Mean score : ", np.mean(solution_policy_scores))
 # run with render=True for visualization
 episode_simulation(environment, solution_policy, True)
-

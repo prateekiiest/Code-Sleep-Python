@@ -37,6 +37,8 @@ print("Timesteps taken: {}".format(epochs))
 print("Penalties incurred: {}".format(penalties))
 
 # Printing all the possible actions, states, rewards.
+
+
 def framesf(frames):
     for i, frame in enumerate(frames):
         clear_output(wait=True)
@@ -46,5 +48,6 @@ def framesf(frames):
         print(f"Action: {frame['action']}")
         print(f"Reward: {frame['reward']}")
         sleep(.1)
-        
+
+
 framesf(frames)

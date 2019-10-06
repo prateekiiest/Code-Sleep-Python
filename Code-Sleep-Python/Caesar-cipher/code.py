@@ -1,5 +1,6 @@
 import string
 string.ascii_lowercase
+import argparse
 
 # We will consider the alphabet to be these letters, along with a space.
 
@@ -11,13 +12,15 @@ string.ascii_lowercase
 alphabet = string.ascii_lowercase + " "
 letters = dict(enumerate(alphabet))
 
-# define `coded_message` here!
-
+p = argparse.ArgumentParser(description="Make line of colored text look like an Image")
+p.add_argument("-e", "-encription_key", help="encription key")
+p.add_argument("-m", "-message", help="message")
+args = p.parse_args()
 
 
 ##################
 
-message = raw_input("Enter a string: ")
+message = args.m
 
 def caesar(mee, encryption_key):
         
@@ -45,7 +48,7 @@ def caesar(mee, encryption_key):
     return encoded_mess
     
     
-encryption_key=input("Enter a number: ")
+encryption_key = args.e
     
 encoded_message = (caesar(message,encryption_key))
 print(encoded_message)

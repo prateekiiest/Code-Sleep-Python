@@ -1,18 +1,15 @@
 import string
-string.ascii_lowercase
 import argparse
 
+string.ascii_lowercase
 # We will consider the alphabet to be these letters, along with a space.
 
 # create `letters` here!
 
-
-
-##
 alphabet = string.ascii_lowercase + " "
 letters = dict(enumerate(alphabet))
 
-p = argparse.ArgumentParser(description="Make line of colored text look like an Image")
+p = argparse.ArgumentParser(description="Implement Caesar Cipher Algorithm")
 p.add_argument("-e", "-encription_key", help="encription key")
 p.add_argument("-m", "-message", help="message")
 args = p.parse_args()

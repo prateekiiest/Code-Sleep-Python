@@ -1,32 +1,33 @@
 import random
-
 import numpy as np
 import matplotlib.pyplot as plt
-
 from sklearn import cluster, datasets
+
 
 def plot_by_groups(points, labels):
     for i in set(labels):
-        group = np.array([point for point, label in zip(points, labels) if label == i])
+        cordinate = [point for point, label in zip(points, labels) if label == i]
+        group = np.array(cordinate)
         color = 'black' if i == -1 else None
         marker = 'x' if i == -1 else None
-        plt.scatter(group[:,0], group[:,1], color=color, marker=marker)
+        plt.scatter(group[:, 0], group[:, 1], color=color, marker=marker)
     plt.show()
+
 
 def distance(p, q):
     return np.linalg.norm(p-q)
+
 
 def find_neighbors(points, eps):
     neighbors = [[] for _ in points]
     for i, p in enumerate(points):
         for j, q in enumerate(points):
-            if distance(p, q) <= eps:
-                neighbors[i] += [j]
+            neighbors[i] += [j] if distance(p, q) <= eps else []
     return neighbors
 
-data = np.array([[1,1],[1,2],[2,1],[2,2],[1.5,1.5],
-                 [6,1],[6,2],[7,1],[7,2],[6.5,1.5],
-                 [3,1],[4,1],[5,1],[1,5],[1.5,4.5]])
+data = np.array([[1, 1], [1, 2], [2, 1], [2, 2], [1.5, 1.5],
+                 [6, 1], [6, 2], [7, 1], [7, 2], [6.5, 1.5],
+                 [3, 1], [4, 1], [5, 1], [1, 5], [1.5, 4.5]])
 
 N = data.shape[0]
 M = 4

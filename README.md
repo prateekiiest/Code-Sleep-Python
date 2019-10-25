@@ -14,7 +14,7 @@
 
 
 
-#### [Join Slack](https://join.slack.com/t/code-sleep-python/shared_invite/enQtMzE0NTIwNzY0MTM1LWFhNGY0NWQ0MDIxNjZmMzgyMzlhOTk3YTY4YjQwNjJmOGIyMTZiNzA4MzkwZWE0ZjgyOWQ2MmMzMWJlMDExMjY)
+#### [Join Slack](https://join.slack.com/t/code-sleep-python/shared_invite/enQtMzE0NTIwNzY0MTM1LTY2ZDYwMmNiMzM1MDNjMjQzZTcwNGY0YmFjZjczNjIzNmNkZjk3ZTlhOWQyNWUxZjNmMjMxOTM1ODFmYTBjNzE)
 
 ![](codesleeppython.png)
 

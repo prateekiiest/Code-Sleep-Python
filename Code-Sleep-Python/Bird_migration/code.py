@@ -1,3 +1,10 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Import bird data
+birddata = pd.read_csv("https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/c72498a54a4513c2eb4ec005adc0010c/asset-v1:HarvardX+PH526x+3T2016+type@asset+block/bird_tracking.csv")
+
 # First, use `groupby` to group up the data.
 grouped_birds = birddata.groupby("bird_name")
 

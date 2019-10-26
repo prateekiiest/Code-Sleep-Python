@@ -53,7 +53,9 @@ A step-by-step guide to download all the codes from here and test yourself in yo
   cd Code-Sleep-python
   cd Code-Sleep-Python  # all the codes are present Here
 
-  ipython notebook
+  pip install jupyterlab
+
+  jupyter notebook
 
 ```
 This will open a new jupyter notebook in your localhost where you can run all the codes and test it for yourself.

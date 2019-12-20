@@ -9,7 +9,7 @@ GREEN = (0, 255, 0)
 MAUVE = (224, 176, 255)  # colour tuples to be used later in the program
 clock = pygame.time.Clock()
 
-############Getting User Input using GUI#####################
+# Getting User Input using GUI
 
 
 def get_num():
@@ -29,7 +29,7 @@ n.pack()
 btn.pack()  # using pack() geometry manager
 m.mainloop()  # start GUI
 
-###################Setting up grid#######################
+# Setting up grid
 sq_num = num
 if (math.floor(math.sqrt(num))**2 - num != 0):
     # getting nearest square greater than or equal to num
@@ -52,7 +52,8 @@ pygame.display.update()
 
 def text_objects(text, font):
     '''
-    Function to create TextSurface and TextRect objects for displaying text on the PyGame window.
+    Function to create TextSurface and TextRect objects for
+    displaying text on the PyGame window.
     It takes 2 parameters:
         text : the text to be displayed
         font : pygame.font.Font object in which the text is to be rendered
@@ -63,7 +64,8 @@ def text_objects(text, font):
 
 def message_display(text, x, y, size):
     '''
-    Function to display the given 'text' message at a position of (x,y) in size 'size'
+    Function to display the given 'text' message
+    at a position of (x,y) in size 'size'
     '''
     largeText = pygame.font.Font('freesansbold.ttf', size)
     TextSurf, TextRect = text_objects(text, largeText)
@@ -114,7 +116,7 @@ for i in range(0, width, 32):
         else:
             break
 pygame.display.update()
-#################Sieving algorithm###################
+# Sieving algorithm
 # all the numbers except 1 since 1 is neither prime nor composite
 nums = set(range(2, num + 1))
 composites = {1}  # set of composites detected so far
@@ -136,7 +138,8 @@ for i in range(
 primetxt = ''  # string of primes to be displayed
 for val, cell in celldict.items():
     pygame.event.pump()
-    if not cell.highlighted:  # if the cell has not been highlighted, it is prime
+    if not cell.highlighted:  # if the cell has not been highlighted
+                                # it is prime
         x, y = cell.pos
         # highlight the primes with GREEN
         pygame.draw.rect(display, GREEN, (x, y, 32, 32))
@@ -144,7 +147,7 @@ for val, cell in celldict.items():
         pygame.time.wait(100)  # to create a moving highlight
         primetxt += str(val) + ' ,'  # concatenate primes to primetxt string
 
-##############Displaying results using GUI############
+# Displaying results using GUI
 m = tkinter.Tk()  # root window
 l1 = tkinter.Label(m, text='Primes that were sieved: ')
 # Message widget to display the sieved primes

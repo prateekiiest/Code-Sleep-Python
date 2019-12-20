@@ -139,7 +139,7 @@ primetxt = ''  # string of primes to be displayed
 for val, cell in celldict.items():
     pygame.event.pump()
     if not cell.highlighted:  # if the cell has not been highlighted
-    # it is prime
+        # it is prime
         x, y = cell.pos
         # highlight the primes with GREEN
         pygame.draw.rect(display, GREEN, (x, y, 32, 32))

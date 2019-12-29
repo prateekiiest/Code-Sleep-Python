@@ -9,45 +9,11 @@ GREEN = (0, 255, 0)
 MAUVE = (224, 176, 255)  # colour tuples to be used later in the program
 clock = pygame.time.Clock()
 
-# Getting User Input using GUI
 
-
-def get_num():
+def get_num(m, n):
     global num
     num = int(n.get())  # gets value of num from Tkinter GUI
     m.destroy()  # destroys root window
-
-
-m = tkinter.Tk()  # root window
-l1 = tkinter.Label(m, text='Enter a number', width=25)  # label widget
-n = tkinter.Entry(m)  # entry widget
-
-# calculate button bounded to get_num function
-btn = tkinter.Button(m, text='Calculate', command=get_num)
-l1.pack()
-n.pack()
-btn.pack()  # using pack() geometry manager
-m.mainloop()  # start GUI
-
-# Setting up grid
-sq_num = num
-if (math.floor(math.sqrt(num))**2 - num != 0):
-    # getting nearest square greater than or equal to num
-    sq_num = (math.floor(math.sqrt(num)) + 1)**2
-dim = int(sq_num**0.5)  # number of rows and columns of the window
-
-# creating a window having 'dim' rows and columns. Each cell has width of 32px
-width = 32 * dim
-display = pygame.display.set_mode((width, width))
-display.fill(WHITE)  # fill the display with WHITE color
-
-for i in range(0, width, 32):
-    pygame.draw.line(display, BLACK, (i, 0), (i, width)
-                     )  # drawing row lines 32px apart
-for j in range(0, width, 32):
-    # drawing column lines 32px apart
-    pygame.draw.line(display, BLACK, (0, j), (width, j))
-pygame.display.update()
 
 
 def text_objects(text, font):
@@ -74,9 +40,6 @@ def message_display(text, x, y, size):
     pygame.display.update()
 
 
-celldict = {}  # dictionary to map numbers to their respective cells
-
-
 class Cell:  # creating a class for Cell objects on the grid
     def __init__(self, x, y, n):
         self.pos = (x, y)
@@ -101,6 +64,40 @@ class Cell:  # creating a class for Cell objects on the grid
             # for the effect of moving highlight or "scanning" the grid
             pygame.time.wait(50)
 
+
+# getting user input from GUI
+m = tkinter.Tk()  # root window
+l1 = tkinter.Label(m, text='Enter a number', width=25)  # label widget
+n = tkinter.Entry(m)  # entry widget
+
+# calculate button bounded to get_num function
+btn = tkinter.Button(m, text='Calculate', command=lambda: get_num(m, n))
+l1.pack()
+n.pack()
+btn.pack()  # using pack() geometry manager
+m.mainloop()  # start GUI
+
+# setting up grid
+sq_num = num
+if (math.floor(math.sqrt(num))**2 - num != 0):
+    # getting nearest square greater than or equal to num
+    sq_num = (math.floor(math.sqrt(num)) + 1)**2
+dim = int(sq_num**0.5)  # number of rows and columns of the window
+
+# creating a window having 'dim' rows and columns. Each cell has width of 32px
+width = 32 * dim
+display = pygame.display.set_mode((width, width))
+display.fill(WHITE)  # fill the display with WHITE color
+
+for i in range(0, width, 32):
+    pygame.draw.line(display, BLACK, (i, 0), (i, width)
+                     )  # drawing row lines 32px apart
+for j in range(0, width, 32):
+    # drawing column lines 32px apart
+    pygame.draw.line(display, BLACK, (0, j), (width, j))
+pygame.display.update()
+
+celldict = {}  # dictionary to map numbers to their respective cells
 
 count = 1
 for i in range(0, width, 32):

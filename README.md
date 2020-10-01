@@ -1,4 +1,4 @@
-# Code Sleep Python :snake:
+# Code with Sleeping Python :snake:
 
 -------------------------------------------------
 

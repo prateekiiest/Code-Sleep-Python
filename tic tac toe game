@@ -1,0 +1,137 @@
+# This file contains source code for tic tac toe game.
+
+board = [' ' for x in range(10)]
+import random
+
+def insert_letter(letter,pos):
+    board[pos]=letter
+def free_space(pos):
+    return board[pos]==' '
+def no_space(board):
+    if board.count(' ')>1:
+        return False
+    else:
+        return True
+def print_board(board):
+    print('   |   |  ')
+    print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3] )
+    print('   |   |  ')
+    print('____________')
+    print('   |  |  ')
+    print(' ' + board[4] + ' | ' + board[5] + ' | ' + board[6])
+    print('   |   |  ')
+    print('____________')
+    print('   |   |  ')
+    print(' ' + board[7] + ' | ' + board[8] + ' | ' + board[9])
+    print('   |   |  ')
+
+def winner(b,l):
+    return (b[1]==l and b[2]==l and b[3]==l) or (b[4]==l and b[5]==l and b[6]==l) or (b[7]==l and b[8]==l and b[9]==l) \
+           or (b[1]==l and b[5]==l and b[9]==l) or (b[3]==l and b[5]==l and b[7]==l) or (b[1]==l and b[4]==l and b[7]==l)\
+           or (b[2]==l and b[5]==l and b[8]==l) or (b[3]==l and b[6]==l and b[9]==l)
+def player_move():
+    run=True
+    while run:
+        move=input("enter number between 1 and 9")
+        try:
+            move=int(move)
+            if move  > 0 and move < 10:
+                if free_space(move):
+                    run = False
+                    insert_letter('X', move)
+                else:
+                    print('This space is occupied!')
+            else:
+                print('Please enter number 1 to 9')
+
+        except:
+            print('please enter the number!')
+
+
+def computer_move():
+
+    possible_move=[x for x , letter in enumerate(board) if letter== ' ' and x != 0]
+    move = 0
+    for let in ['0' , 'x']:
+        for i in possible_move:
+            boardcopy=board[:]
+            boardcopy[i]=let
+            if winner(boardcopy,let):
+                move=i
+                return  move
+
+    corner_open=[]
+    for i in possible_move:
+        if i in [1,3,7,9]:
+            corner_open.append(i)
+    if len(corner_open)>0:
+        move = random.choice(corner_open)
+        return move
+    if 5 in possible_move:
+        move=5
+        return move
+    edges_open=[]
+    for i in possible_move:
+        if i in [2,4,6,8]:
+            edges_open.append(i)
+        if len(edges_open>0):
+            move=random.choice(edges_open)
+            return move
+
+def selectRandom(li):
+    import random
+    ln=len(li)
+    r=random.randrange(0,ln)
+    return li(r)\
+
+
+
+
+def main():
+    print("Welcome to the game!")
+    print_board(board)
+
+    while not(no_space(board)):
+        if not(winner(board , 'O')):
+            player_move()
+            print_board(board)
+        else:
+            print("sorry you loose!")
+            break
+
+        if not(winner(board , 'X')):
+            move = computer_move()
+            if move == 0:
+                print(" ")
+            else:
+                insert_letter('O' , move)
+                print('computer placed an o on position' , move , ':')
+                print_board(board)
+        else:
+            print("you win!")
+            break
+
+
+
+
+    if no_space(board):
+        print("Tie game")
+
+
+while True:
+    x=input("do you want to play again [y/n]")
+    if x.lower()=='y':
+
+        board=[' ' for x in range(10)]
+        print('-------------')
+        main()
+    else:
+        break
+
+
+
+
+
+
+
+

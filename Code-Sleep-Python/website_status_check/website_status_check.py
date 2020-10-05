@@ -2,14 +2,16 @@ import requests
 
 
 def check_url(url):
+    if url[:4]=="http:":
+        
     # This function uses status codes to check various states of any website.
     # modified to only return the status code
-    try:
-        r = requests.get(url)  # added spacing for PEP8
-        return r.status_code
-    except requests.ConnectionError:
-        # added default code in case of failure in the requests library
-        return 999
+         try:
+            r = requests.get(url)  # added spacing for PEP8
+            return r.status_code
+         except requests.ConnectionError:
+             # added default code in case of failure in the requests library
+            return 999
 
 
 def print_message(code):

@@ -14,9 +14,11 @@ def check_url(url):
 
 def print_message(code):
     status_message = {
-        100: 'Website is slow to respond, but appears ok.',
-        101: 'Server is upgrading to the requested protocol.',
-        102: 'Request received, website has yet to respond.',
+        100: "Website is slow to respond, but appears ok.",
+        101: "Server is upgrading to the requested protocol.",
+        102: "Request received, website has yet to respond.",
+        103: "Early hints, returns response header preview before the rest "
+             "of the server's response is ready.",
         200: "Website is online.",
         201: "The request has succeeded and a new resource has been created.",
         202: "The request has been received but not yet acted upon.",

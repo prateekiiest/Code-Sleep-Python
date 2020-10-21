@@ -26,8 +26,8 @@ def wishMe():
     else:
         speak("Good evening sir")
 
-    speak("I am Friday, your virtual assistant running on python. How may I help you?")
-
+     speak("I am Friday, your virtual assistant running on python?")
+    speak("How may I help you?")
 
 def takeCommand():
     r = sr.Recognizer()
@@ -61,7 +61,9 @@ while True:
         print(results)
         speak(results)
     elif 'what can you do' in query:
-        speak("I can search for something in wikipedia, open websites, play friends or even open your whatsapp. If you are interested to  read some amazing blogs say open my blog.")
+         speak("I can search for something in wikipedia,")
+        speak("open websites, play friends or even open your whatsapp.")
+        speak("If you are interested to  read some amazing blogs say open my blog.")
     elif 'who are you' in query:
         speak("I am friday, the successor of Jarvis.")
     elif 'open youtube' in query:

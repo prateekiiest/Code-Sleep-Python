@@ -26,7 +26,7 @@ def wishMe():
     else:
         speak("Good evening sir")
 
-     speak("I am Friday, your virtual assistant running on python?")
+    speak("I am Friday, your virtual assistant running on python?")
     speak("How may I help you?")
 
 def takeCommand():
@@ -61,7 +61,7 @@ while True:
         print(results)
         speak(results)
     elif 'what can you do' in query:
-         speak("I can search for something in wikipedia,")
+        speak("I can search for something in wikipedia,")
         speak("open websites, play friends or even open your whatsapp.")
         speak("If you are interested to  read some amazing blogs say open my blog.")
     elif 'who are you' in query:

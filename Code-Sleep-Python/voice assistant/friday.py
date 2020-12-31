@@ -5,6 +5,8 @@ import wikipedia
 import webbrowser
 import subprocess
 import os
+import smtplib
+
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -15,7 +17,13 @@ engine.setProperty('voice', voices[0].id)
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
-
+def sendemail(to,content):
+    server = smtplib.SMTP("smtp.gmail.com",587)
+    server.ehlo()
+    server.starttls()
+    server.login("mygmai.com","my password")
+    server.sendmail("mygmail.com",to,content)
+    server.close()
 
 def wishMe():
     hour = int(datetime.datetime.now().hour)
@@ -82,6 +90,16 @@ while True:
     elif 'open whatsapp' in query:
         subprocess.call(
             'C:\\Users\\hp\\AppData\\Local\\WhatsApp\\WhatsApp.exe')
+    elif 'email to name' in quary:
+        try:
+            speak("email_content")
+            content = takecommand()
+            to = "abc@gmail.com"
+            sendemail(to, content)
+            speak("email has been sent")
+        except Exception as e:
+            print(e)
+            speak("sorry my friend unable to send email")
     elif 'play friends' in query:
         friends_dir = 'G:\\F.R.I.E.N.D.S'
         friends = os.listdir(friends_dir)

@@ -15,4 +15,4 @@ setup(
         "License :: OSI Approved :: MIT License",
     ],
 )
-© 2018 GitHub, Inc.
+#© 2018 GitHub, Inc.

@@ -9,7 +9,6 @@ pygame.init()
 SCREEN = WIDTH, HEIGHT = 288, 512
 display_height = 0.80 * HEIGHT
 info = pygame.display.Info()
-
 width = info.current_w
 height = info.current_h
 
@@ -19,7 +18,6 @@ else:
     win = pygame.display.set_mode(
         SCREEN, pygame.NOFRAME | pygame.SCALED | pygame.FULLSCREEN)
 
-# win = pygame.display.set_mode(SCREEN, pygame.SCALED | pygame.FULLSCREEN)
 clock = pygame.time.Clock()
 FPS = 60
 
@@ -35,7 +33,6 @@ bg1 = pygame.image.load('Assets/background-day.png')
 bg2 = pygame.image.load('Assets/background-night.png')
 
 bg = random.choice([bg1, bg2])
-
 im_list = [pygame.image.load('Assets/pipe-green.png'),
            pygame.image.load('Assets/pipe-red.png')]
 pipe_img = random.choice(im_list)
@@ -80,7 +77,6 @@ while running:
         speed = 0
         grumpy.draw_flap()
         base.update(speed)
-
         win.blit(flappybird_img, (40, 50))
     else:
 
@@ -118,8 +114,8 @@ while running:
 
         if len(pipe_group) > 0:
             p = pipe_group.sprites()[0]
-            if (grumpy.rect.left > p.rect.left and 
-                grumpy.rect.right < p.rect.right and not pipe_pass 
+            if (grumpy.rect.left > p.rect.left and
+                grumpy.rect.right < p.rect.right and not pipe_pass
                     and grumpy.alive):
                 pipe_pass = True
 

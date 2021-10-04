@@ -99,8 +99,8 @@ while running:
         grumpy.update()
         score_img.update(score)
 
-        if pygame.sprite.spritecollide(grumpy, pipe_group, False)
-            or grumpy.rect.top <= 0:
+        if (pygame.sprite.spritecollide(grumpy, pipe_group, False)
+                or grumpy.rect.top <= 0):
             game_started = False
             if grumpy.alive:
                 hit_fx.play()

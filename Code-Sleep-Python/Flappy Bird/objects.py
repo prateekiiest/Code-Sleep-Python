@@ -48,13 +48,9 @@ class Grumpy:
             self.image = pygame.transform.rotate(
                 self.im_list[self.index], self.theta)
 
-    #	if not alive:
-    #		self.image = self.im_list[1]
-
         self.win.blit(self.image, self.rect)
 
     def flap_counter(self):
-        # animation
         self.counter += 1
         if self.counter > 5:
             self.counter = 0

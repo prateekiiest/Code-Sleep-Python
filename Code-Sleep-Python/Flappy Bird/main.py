@@ -103,7 +103,8 @@ while running:
         grumpy.update()
         score_img.update(score)
 
-        if pygame.sprite.spritecollide(grumpy, pipe_group, False) or grumpy.rect.top <= 0:
+        if pygame.sprite.spritecollide(grumpy, pipe_group, False)
+            or grumpy.rect.top <= 0:
             game_started = False
             if grumpy.alive:
                 hit_fx.play()
@@ -117,7 +118,9 @@ while running:
 
         if len(pipe_group) > 0:
             p = pipe_group.sprites()[0]
-            if grumpy.rect.left > p.rect.left and grumpy.rect.right < p.rect.right and not pipe_pass and grumpy.alive:
+            if (grumpy.rect.left > p.rect.left and 
+                grumpy.rect.right < p.rect.right and not pipe_pass 
+                    and grumpy.alive):
                 pipe_pass = True
 
             if pipe_pass:
@@ -143,7 +146,6 @@ while running:
                 start_screen = False
 
                 game_over = False
-            #	grumpy.reset()
                 last_pipe = pygame.time.get_ticks() - pipe_frequency
                 next_pipe = 0
                 pipe_group.empty()
